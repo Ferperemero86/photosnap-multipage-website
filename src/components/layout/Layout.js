@@ -5,14 +5,16 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
-  return (
-    <div>
-      <MainMenu />
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </div>
-  );
+	return (
+		<div>
+			<MainMenu
+				text="test"
+				comeone="yeH" />
+			<Header />
+			<main>{children}</main>
+			<Footer />
+		</div>
+	);
 };
 
 export default Layout;
