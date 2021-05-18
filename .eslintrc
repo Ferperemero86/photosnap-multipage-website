@@ -1,7 +1,7 @@
 {
   "extends": [
-		"plugin:react/recommended",
-		"standard"
+		"standard",
+		"plugin:react/recommended"
   ],
   "env": {
     "browser": true
@@ -12,6 +12,7 @@
     }
   },
   "rules": {
+
     "react/react-in-jsx-scope": 0,
     "react/jsx-first-prop-new-line": [1, "always"],
     "react/jsx-max-props-per-line": [1,{"when": "always"}],
@@ -22,5 +23,6 @@
 		"semi": ["error", "always"],
 		"quotes": ["error", "double"],
 		"react/prop-types": "off"
+		//"linebreak-style": 0
   }
 }

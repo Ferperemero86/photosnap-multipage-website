@@ -9,7 +9,8 @@ const Layout = ({ children }) => {
 		<div>
 			<MainMenu
 				text="test"
-				comeone="yeH" />
+				comeone="yeH"
+				test="eeee" />
 			<Header />
 			<main>{children}</main>
 			<Footer />
