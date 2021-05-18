@@ -43,8 +43,9 @@
 		}
 	},
 	"lint-staged": {
-		"*.{js,mjs}": [
-			"eslint --fix"
-		]
+		"*.js": [
+      "eslint --fix",
+      "git add"
+    ]
 	}
 }
