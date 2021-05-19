@@ -12,9 +12,7 @@ const Home = () => {
 
 	const dispatch = useDispatch();
 
-	const handleVegToggle = () => {
-		dispatch(showMobileMenu());
-	};
+	const handleVegToggle = () => () => dispatch(showMobileMenu());
 
 	console.log(state);
 
@@ -22,7 +20,7 @@ const Home = () => {
 		<Layout>
 			<h1>Home</h1>
 			<button
-				onClick={ handleVegToggle }>Try me</button>
+				onClick={ handleVegToggle() }>Try me</button>
 		</Layout>
 	);
 };

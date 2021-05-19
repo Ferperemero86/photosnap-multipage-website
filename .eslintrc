@@ -1,8 +1,7 @@
 {
 	"extends": [
 		"standard",
-		"plugin:react/recommended",
-		"plugin:prettier/recommended"
+		"plugin:react/recommended"
 	],
 	"env": {
 		"browser": true
@@ -13,14 +12,18 @@
 		}
 	},
 	"rules": {
-		"prettier/prettier": [
-			"error",
-			{
-				"endOfLine": "auto"
-			}
-		],
 		"react/prop-types": "off",
-		"no-Tabs": true,
-		"react/jsx-first-prop-new-line": "always"
+		"semi": [
+			"error",
+			"always"
+		],
+		"quotes": [
+			"error",
+			"double"
+		],
+		"indent": [
+			"tabs",
+			"error"
+		]
 	}
 }
