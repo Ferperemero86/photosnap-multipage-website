@@ -2,7 +2,7 @@
 	"extends": [
 		"standard",
 		"plugin:react/recommended",
-		"prettier"
+		"plugin:prettier/recommended"
 	],
 	"env": {
 		"browser": true
@@ -13,33 +13,14 @@
 		}
 	},
 	"rules": {
-		"react/react-in-jsx-scope": 0,
-		"react/jsx-first-prop-new-line": [
-			1,
-			"always"
-		],
-		"react/jsx-max-props-per-line": [
-			1,
+		"prettier/prettier": [
+			"error",
 			{
-				"when": "always"
+				"endOfLine": "auto"
 			}
 		],
-		"indent": [
-			"error",
-			"tab"
-		],
-		"no-tabs": "off",
-		"eqeqeq": "error",
-		"curly": "error",
-		"semi": [
-			"error",
-			"always"
-		],
-		"quotes": [
-			"error",
-			"double"
-		],
-		"react/prop-types": "off"
-		//"linebreak-style": 0
+		"react/prop-types": "off",
+		"no-Tabs": true,
+		"react/jsx-first-prop-new-line": "always"
 	}
 }
