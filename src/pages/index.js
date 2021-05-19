@@ -1,15 +1,28 @@
 import React from "react";
+
 import Layout from "../components/layout/Layout";
-import { useSelector } from "react-redux";
+
+import { useSelector, useDispatch } from "react-redux";
+import { showMobileMenu } from "../state/actions/display-actions";
 
 const Home = () => {
-	console.log(useSelector(state => {
+	const state = useSelector(state => {
 		return state;
-	}));
+	});
+
+	const dispatch = useDispatch();
+
+	const handleVegToggle = () => {
+		dispatch(showMobileMenu());
+	};
+
+	console.log(state);
 
 	return (
 		<Layout>
 			<h1>Home</h1>
+			<button
+				onClick={ handleVegToggle }>Try me</button>
 		</Layout>
 	);
 };

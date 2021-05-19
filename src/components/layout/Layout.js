@@ -12,9 +12,10 @@ const Layout = ({ children }) => {
 				comeone="yeH"
 				test="eeee" />
 			<Header />
-			<main>{children}</main>
+			<main>{ children }</main>
 			<Footer />
 		</div>
+
 	);
 };
 
