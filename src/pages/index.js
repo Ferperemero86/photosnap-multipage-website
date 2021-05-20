@@ -13,7 +13,7 @@ const Home = () => {
 
 	const dispatch = useDispatch();
 
-	const handleVegToggle = () => () => dispatch(showMobileMenu());
+	const handleVegToggle = () => asyncDispatch(dispatch, showMobileMenu);
 
 	console.log(state);
 
