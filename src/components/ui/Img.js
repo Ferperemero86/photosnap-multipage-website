@@ -1,9 +1,7 @@
 import React from "React";
 
 const Img = () => {
-	<img
-		src=""
-		className="" />;
+	<img src="" className="" />;
 };
 
 export default Img;

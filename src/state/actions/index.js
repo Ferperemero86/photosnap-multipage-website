@@ -1,5 +1,3 @@
-import displayActions from "./display-actions";
+export const asyncDispatch = (dispatch, action) => () => dispatch(action());
 
-export default {
-	displayActions
-};
+

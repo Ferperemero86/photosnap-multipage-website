@@ -7,12 +7,9 @@ import Footer from "./Footer";
 const Layout = ({ children }) => {
 	return (
 		<div>
-			<MainMenu
-				text="test"
-				comeone="yeH"
-				test="eeee" />
+			<MainMenu text="test" comeone="yeH" test="eeee" />
 			<Header />
-			<main>{ children }</main>
+			<main>{children}</main>
 			<Footer />
 		</div>
 	);

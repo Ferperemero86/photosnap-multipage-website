@@ -1,7 +1,8 @@
 {
 	"extends": [
 		"standard",
-		"plugin:react/recommended"
+		"plugin:react/recommended",
+		"plugin:prettier/recommended"
 	],
 	"env": {
 		"browser": true
@@ -11,19 +12,33 @@
 			"version": "detect"
 		}
 	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
 	"rules": {
+		"prettier/prettier": [
+			"error",
+			{
+				"endOfLine": "auto",
+				"useTabs": true,
+				"bracketSpacing": true,
+				"singleQuote": false,
+				"semi": true,
+				"jsxSingleQuote": false
+			}
+		],
+		"no-tabs": [
+			"error",
+			{
+				"allowIndentationTabs": true
+			}
+		],
 		"react/prop-types": "off",
-		"semi": [
-			"error",
-			"always"
-		],
-		"quotes": [
-			"error",
-			"double"
-		],
-		"indent": [
-			"tabs",
-			"error"
+		"react/jsx-curly-spacing": [
+			2,
+			"never"
 		]
 	}
 }
