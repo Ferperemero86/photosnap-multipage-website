@@ -26,7 +26,8 @@
 				"bracketSpacing": true,
 				"singleQuote": false,
 				"semi": true,
-				"jsxSingleQuote": false
+				"jsxSingleQuote": false,
+				"trailingComma": "none"
 			}
 		],
 		"no-tabs": [
@@ -36,9 +37,6 @@
 			}
 		],
 		"react/prop-types": "off",
-		"react/jsx-curly-spacing": [
-			2,
-			"never"
-		]
+		"react/jsx-curly-spacing": [2, "never"]
 	}
 }

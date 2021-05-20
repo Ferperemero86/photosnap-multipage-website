@@ -1,1 +1,1 @@
-export const asyncDispatch = (dispatch, action) => () => dispatch(action()); // Reusable asyn dispatch
+export const asyncDispatch = (dispatch, action) => () => dispatch(action()); // Reusable async dispatch
