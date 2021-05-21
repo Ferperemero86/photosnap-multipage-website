@@ -1,18 +1,22 @@
 import React from "react";
 
-import { useStaticQuery, graphql } from "gatsby";
+import Img from "../../ui/Img";
 
 const MainMenu = () => {
-	const query = useStaticQuery(graphql`
-		query dataQuery {
-			dataJson {
-				test
-			}
-		}
-	`);
-
-	const { test } = query.dataJson;
-	return <h1>{test}</h1>;
+	return (
+		<div className="main-menu">
+			<div className="main-menu-bar">
+				<Img
+					url="https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241087/photosnap/shared/desktop/ykufpoveea1twje8dyvx.svg"
+					stylesClass="menu-bar-logo"
+				/>
+				<Img
+					url="https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241090/photosnap/shared/mobile/upsvqukofxwa49npe5jt.svg"
+					stylesClass="menu-bar-hamburger"
+				/>
+			</div>
+		</div>
+	);
 };
 
 export default MainMenu;
