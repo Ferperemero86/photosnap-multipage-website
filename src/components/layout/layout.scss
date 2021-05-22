@@ -1,7 +1,15 @@
 @import "../../scss/settings/theme";
 
+
 @import "../../scss/tools/functions";
 @import "../../scss/tools/mixins";
 
+
 @import "../../scss/base/normalize";
 @import "../../scss/base/base";
+
+
+@import "../layout/main-menu/main-menu";
+
+@import "../ui/menu/menu";
+@import "../ui/button/btn";
