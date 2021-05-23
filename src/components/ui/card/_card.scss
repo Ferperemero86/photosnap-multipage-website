@@ -34,8 +34,7 @@
 	}
 
 	&-body {
-		@include bg-color("primary");
-
+		
 
 		@include breakpoint-up("md") {
 			width: 65%;

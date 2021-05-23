@@ -10,6 +10,10 @@
 
 		@include color("third");
 		@include bg-color("primary");
+
+		.card-body-btn {
+			@include color("third");
+		}
 	}
 
 }
