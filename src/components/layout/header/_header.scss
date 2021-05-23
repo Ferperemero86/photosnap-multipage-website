@@ -1,3 +1,20 @@
 .header {
-	
+	width: 100%;
+	padding: 0rem;
 }
+
+.header-primary {
+	@extend .header;
+
+	&-content {
+
+		@include color("third");
+		@include bg-color("primary");
+	}
+
+}
+
+
+
+
+

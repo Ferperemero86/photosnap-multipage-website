@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Img from "../../ui/Img";
+import Img from "../../ui/image/Img";
 import Button from "../../ui/button/Button";
 import Menu from "../../ui/menu/Menu";
 

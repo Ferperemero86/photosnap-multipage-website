@@ -1,11 +1,25 @@
 import React from "react";
 
-import TextBlock from "../../ui/text-block/TextBlock";
+import Card from "../../ui/card/Card";
 
-const Header = () => {
+const Header = ({ stylesClass, cardContent, hType }) => {
+	const { cardHeading, cardText, cardImages } = cardContent;
+	const { btnLabel } = cardContent.button;
+	const { icon } = cardContent;
+	console.log(cardContent, btnLabel);
 	return (
-		<div className="header">
-			<TextBlock hType="h1" />
+		<div className={`${stylesClass}`}>
+			<div className={`${stylesClass}-content`}>
+				<Card
+					hType={hType}
+					hText={cardHeading}
+					pText={cardText}
+					cardImages={cardImages}
+					btnLabel={btnLabel}
+					icon={icon}
+					stylesClass="card-primary"
+				/>
+			</div>
 		</div>
 	);
 };

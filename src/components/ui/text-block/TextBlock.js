@@ -1,18 +1,12 @@
 import React from "react";
 
-const Heading = ({ hType }) => {
-	console.log(hType);
-	if (hType === "h1") {
-		return <h1 className="text-block-heading">Heading</h1>;
-	}
+import Heading from "../heading/Heading";
 
-	return null;
-};
-
-const TextBlock = ({ hType }) => {
+const TextBlock = ({ hType, hText, pText }) => {
 	return (
 		<div className="text-block">
-			<Heading hType={hType} className="text-block-heading" />
+			<Heading type={hType} text={hText} className="text-block-heading" />
+			<p className="text-block-text">{pText}</p>
 		</div>
 	);
 };

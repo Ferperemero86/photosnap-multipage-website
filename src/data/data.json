@@ -11,11 +11,19 @@
 		"buttons": {
 			"invite": {"btnLabel": "GET AN INVITE"}
 		},
-		"headings": {
-			"firstHeading": "CREATE AND SHARE YOUR PHOTO STORIES."
-		}, 
-		"text": {
-			"primaryText": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others."
+		"cards": {
+			"headerPrimary": {
+					"cardHeading": "CREATE AND SHARE YOUR PHOTO STORIES.",
+					"cardText": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
+					"cardImages": [		
+						{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241058/photosnap/home/mobile/rydd2dkx3ullwumtst23.jpg"} ,
+						{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241063/photosnap/home/tablet/rqkfw20xkjhndgqztcvz.jpg"} ,
+						{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241064/photosnap/home/desktop/hfqazblnokdxsvncjjmy.jpg"} 
+					],
+					"button": {"btnLabel": "GET AN INVITE"},
+					"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
+			}
 		}
+		
 	}
 ]

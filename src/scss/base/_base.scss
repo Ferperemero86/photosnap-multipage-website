@@ -79,17 +79,17 @@ h1 {
 }
 
 h2 {
-  @include font-size('md', $heading-sizes);
+  @include font-size('sm', $heading-sizes);
 
 
   @include breakpoint-up('md') {
-    @include font-size('lg', $heading-sizes);
+    @include font-size('md', $heading-sizes);
   }
 
 }
 
 h3 {
-  @include font-size('sm', $heading-sizes);
+  @include font-size('xsm', $heading-sizes);
 }
 
 h4 {
@@ -116,7 +116,7 @@ h4 {
 
 
     @include breakpoint-up('md') {
-      display: inline-block;
+      display: block;
     }
 
     @include breakpoint-up('lg') {
@@ -130,7 +130,7 @@ h4 {
 
 
     @include breakpoint-up('lg') {
-      display: inline-block;
+      display: block;
     }
 
   }
@@ -139,7 +139,7 @@ h4 {
 
 .img-fluid {
   width: 100%;
-  height: auto;
+  height: fit-content;
 }
 
 .slide-out-left {

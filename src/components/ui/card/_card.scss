@@ -1,0 +1,60 @@
+.card {
+	overflow: hidden;
+
+	&-body {
+
+		@extend .container;
+		@include padding-y(4.5rem);
+
+		&-icon {
+
+			margin-left: 1rem;
+		}
+
+
+	}
+
+}
+
+.card-primary {
+	@extend .card;
+
+	&-header {
+
+
+		@include breakpoint-up("md") {
+			height: 40rem;
+			width: 35%;
+		}
+
+		@include breakpoint-up("lg") {
+			width: 57%;
+		}
+
+	}
+
+	&-body {
+		@include bg-color("primary");
+
+
+		@include breakpoint-up("md") {
+			width: 65%;
+			justify-self: center;
+			align-self: center;
+		}
+
+		@include breakpoint-up("lg") {
+			width: 43%;
+			@include hor-padding(7rem);
+		}
+
+	}
+
+
+	@include breakpoint-up("md") {
+		display: flex;
+	  flex-direction: row-reverse;
+	}
+
+}
+
