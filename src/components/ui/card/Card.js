@@ -54,10 +54,7 @@ const CardBody = ({
 				stylesClass={`card-body-btn ${stylesClass}-body-btn`}
 				label={btnLabel}
 			/>
-			<Img
-				url={icon.url}
-				stylesClass={`card-body-icon ${stylesClass}-body-icon`}
-			/>
+			<Img url={icon} stylesClass={`card-body-icon ${stylesClass}-body-icon`} />
 		</div>
 	);
 };

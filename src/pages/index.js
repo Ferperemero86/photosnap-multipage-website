@@ -13,11 +13,11 @@ const Home = () => {
 				cards {
 					headerPrimary {
 						cardHeading
-						cardText
 						cardImages {
 							size
 							url
 						}
+						cardText
 						button {
 							btnLabel
 						}
@@ -29,28 +29,32 @@ const Home = () => {
 						button {
 							btnLabel
 						}
-						cardHeading
-						cardImages {
-							size
-							url
-						}
-						cardText
 						icon {
 							url
+						}
+						cards {
+							cardHeading
+							cardImages {
+								size
+								url
+							}
+							cardText
 						}
 					}
 					group2 {
 						button {
 							btnLabel
 						}
-						cardHeading
-						cardImages {
-							size
-							url
-						}
-						cardText
 						icon {
 							url
+						}
+						cards {
+							cardHeading
+							cardImages {
+								size
+								url
+							}
+							cardText
 						}
 					}
 				}

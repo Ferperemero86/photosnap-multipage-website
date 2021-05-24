@@ -16,7 +16,7 @@ const Header = ({ stylesClass, cardContent, hType }) => {
 					pText={cardText}
 					cardImages={cardImages}
 					btnLabel={btnLabel}
-					icon={icon}
+					icon={icon.url}
 					stylesClass="card-primary"
 					imgRight="img-right"
 				/>

@@ -4,10 +4,11 @@ import Card from "../../../ui/card/Card";
 
 const Cards = ({ cardsContent }) => {
 	console.log(cardsContent);
+	const { button, icon } = cardsContent;
 	let imgRight = "img-right";
 
-	return cardsContent.map((content, idx) => {
-		const { cardHeading, cardText, cardImages, button, icon } = content;
+	return cardsContent.cards.map((content, idx) => {
+		const { cardHeading, cardText, cardImages } = content;
 
 		imgRight = imgRight === "img-right" ? "" : "img-right";
 
