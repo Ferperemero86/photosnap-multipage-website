@@ -46,6 +46,52 @@
 					"button": {"btnLabel": "GET AN INVITE"},
 					"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
 				}
+			],
+			"group2": [
+				{
+					"cardHeading": "The Mountains",
+					"cardText":  "by John Applessed",
+					"cardImages": [		
+						{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241122/photosnap/stories/mobile/izq8uxwmvmazgyuv7yky.jpg"} ,
+						{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241105/photosnap/stories/desktop/hzxyuk8mgzeo67ukclts.jpg"} ,
+						{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241105/photosnap/stories/desktop/hzxyuk8mgzeo67ukclts.jpg"} 
+					],
+					"button": {"btnLabel": "READ STORY"},
+					"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
+				},
+				{
+					"cardHeading": "Sunset Cityscapes",
+					"cardText":  "by Benjamin Cruz",
+					"cardImages": [		
+						{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241115/photosnap/stories/mobile/z4hzkkdvmo9fui2e46ow.jpg"} ,
+						{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/d4qptt5wwy24ldifb6ra.jpg"},
+						{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/d4qptt5wwy24ldifb6ra.jpg"} 
+					],
+					"button": {"btnLabel": "READ STORY"},
+					"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
+				},
+				{
+					"cardHeading": "18 Days Voyage",
+					"cardText":  "by Alexei Borodin",
+					"cardImages": [		
+						{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241112/photosnap/stories/mobile/os55hmmtbfqvo99dj3un.jpg"} ,
+						{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241096/photosnap/stories/desktop/tcunkdhd8r9sipes5hcx.jpg"},
+						{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241096/photosnap/stories/desktop/tcunkdhd8r9sipes5hcx.jpg"} 
+					],
+					"button": {"btnLabel": "READ STORY"},
+					"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
+				},
+				{
+					"cardHeading": "Architecturals",
+					"cardText":  "by Samantha Brooke",
+					"cardImages": [		
+						{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241114/photosnap/stories/mobile/gldnkbb531okskljrzuc.jpg"} ,
+						{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/kafh6drtvcnmsmlj8sjc.jpg"},
+						{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/kafh6drtvcnmsmlj8sjc.jpg"} 
+					],
+					"button": {"btnLabel": "READ STORY"},
+					"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
+				}
 			]
 		}
 		

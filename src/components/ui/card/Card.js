@@ -4,6 +4,13 @@ import Img from "../image/Img";
 import TextBlock from "../text-block/TextBlock";
 import Button from "../button/Button";
 
+const CardSeparator = ({ show }) => {
+	const separator = <hr className="card-body-separator" />;
+	const separatorDisplay = show === true ? separator : null;
+
+	return separatorDisplay;
+};
+
 const HeaderImage = ({ cardImages, stylesClass }) => {
 	return cardImages.map((card) => {
 		const { size, url } = card;
@@ -30,10 +37,19 @@ const CardHeader = ({ stylesClass, cardImages }) => (
 	</div>
 );
 
-const CardBody = ({ stylesClass, hType, hText, pText, btnLabel, icon }) => {
+const CardBody = ({
+	stylesClass,
+	hType,
+	hText,
+	pText,
+	btnLabel,
+	icon,
+	separatorDisplay
+}) => {
 	return (
 		<div className={`card-body ${stylesClass}-body`}>
 			<TextBlock hType={hType} hText={hText} pText={pText} />
+			<CardSeparator show={separatorDisplay} />
 			<Button
 				stylesClass={`card-body-btn ${stylesClass}-body-btn`}
 				label={btnLabel}
@@ -54,10 +70,11 @@ const Card = ({
 	pText,
 	btnLabel,
 	icon,
-	imgRight
+	imgRight,
+	separatorDisplay
 }) => {
 	return (
-		<div className={`${stylesClass} ${imgRight}`}>
+		<div className={`card ${stylesClass} ${imgRight}`}>
 			<CardHeader cardImages={cardImages} stylesClass={`${stylesClass}`} />
 			<CardBody
 				hType={hType}
@@ -65,6 +82,7 @@ const Card = ({
 				pText={pText}
 				btnLabel={btnLabel}
 				icon={icon}
+				separatorDisplay={separatorDisplay}
 				stylesClass={`${stylesClass}`}
 			/>
 		</div>

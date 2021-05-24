@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/layout/Layout";
 import Header from "../components/layout/header/Header";
 import SectionOne from "../components/layout/sections/section-one/SectionOne";
+import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
 
 const Home = () => {
 	const query = useStaticQuery(graphql`
@@ -38,6 +39,20 @@ const Home = () => {
 							url
 						}
 					}
+					group2 {
+						button {
+							btnLabel
+						}
+						cardHeading
+						cardImages {
+							size
+							url
+						}
+						cardText
+						icon {
+							url
+						}
+					}
 				}
 			}
 		}
@@ -46,9 +61,10 @@ const Home = () => {
 	console.log(query);
 
 	const cardContent = query.dataJson.cards.headerPrimary;
-	const cardsContent = query.dataJson.cards.group1;
+	const group1Content = query.dataJson.cards.group1;
+	const group2Content = query.dataJson.cards.group2;
 
-	console.log(cardsContent);
+	console.log(group2Content);
 	return (
 		<Layout>
 			<Header
@@ -56,7 +72,10 @@ const Home = () => {
 				cardContent={cardContent}
 				hType="h2"
 			/>
-			<SectionOne cardsContent={cardsContent} />
+			<main>
+				<SectionOne cardsContent={group1Content} />
+				<SectionTwo cardsContent={group2Content} />
+			</main>
 		</Layout>
 	);
 };

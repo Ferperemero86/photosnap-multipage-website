@@ -1,10 +1,25 @@
 .card {
 	overflow: hidden;
 
+	&-header {
+
+		line-height: 0rem;
+	}
+
 	&-body {
 
 		@extend .container;
 		@include padding-y(4.5rem);
+
+		&-separator {
+
+			opacity: 0.25;
+		}
+
+		&-btn {
+
+			background: none;
+		}
 
 		&-icon {
 
@@ -16,6 +31,7 @@
 
 }
 
+//// CARD PRIMARY ////
 .card-primary {
 	@extend .card;
 
@@ -67,5 +83,27 @@
 		flex-direction: row-reverse;
 	}
 	
+}
+
+
+//// CARD SECOND //// 
+
+.card-second {
+	position: relative;
+
+	&-body {
+
+		position: absolute;
+		padding: 0rem 2rem;
+		bottom: 1rem;
+		@include color("third");
+
+		&-btn {
+
+			@include color("third");
+			margin-top: 1.5rem;
+		}
+	}
+
 }
 

@@ -1,0 +1,13 @@
+.section-two {
+	width: 100%;
+
+	@include breakpoint-up("md") {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include breakpoint-up("lg") {
+		grid-template-columns: repeat(4, 25%);
+	}
+}
+
