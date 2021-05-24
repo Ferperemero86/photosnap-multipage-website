@@ -18,6 +18,7 @@ const Header = ({ stylesClass, cardContent, hType }) => {
 					btnLabel={btnLabel}
 					icon={icon}
 					stylesClass="card-primary"
+					imgRight="img-right"
 				/>
 			</div>
 		</div>

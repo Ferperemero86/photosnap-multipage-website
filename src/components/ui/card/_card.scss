@@ -55,8 +55,17 @@
 
 	@include breakpoint-up("md") {
 		display: flex;
-	  flex-direction: row-reverse;
+	  //flex-direction: row-reverse;
 	}
 
+}
+
+.card-primary.img-right {
+
+
+	@include breakpoint-up("md") {
+		flex-direction: row-reverse;
+	}
+	
 }
 

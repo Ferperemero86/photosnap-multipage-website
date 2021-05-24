@@ -53,10 +53,11 @@ const Card = ({
 	hText,
 	pText,
 	btnLabel,
-	icon
+	icon,
+	imgRight
 }) => {
 	return (
-		<div className={`${stylesClass}`}>
+		<div className={`${stylesClass} ${imgRight}`}>
 			<CardHeader cardImages={cardImages} stylesClass={`${stylesClass}`} />
 			<CardBody
 				hType={hType}
