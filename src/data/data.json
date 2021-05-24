@@ -25,23 +25,23 @@
 			},
 			"group1": [
 				{
-					"cardHeading": "CREATE AND SHARE YOUR PHOTO STORIES.",
-					"cardText": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
+					"cardHeading": "BEAUTIFUL STORIES EVERY TIME",
+					"cardText": "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
 					"cardImages": [		
-						{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241058/photosnap/home/mobile/rydd2dkx3ullwumtst23.jpg"} ,
-						{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241063/photosnap/home/tablet/rqkfw20xkjhndgqztcvz.jpg"} ,
-						{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241064/photosnap/home/desktop/hfqazblnokdxsvncjjmy.jpg"} 
+						{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241060/photosnap/home/mobile/otw1omtz4ynvsb3dnd3x.jpg"} ,
+						{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241066/photosnap/home/tablet/tin3whur8m7imucsudsq.jpg"} ,
+						{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241065/photosnap/home/desktop/y2bpo2t3s5tbfl7ki6lg.jpg"} 
 					],
 					"button": {"btnLabel": "GET AN INVITE"},
 					"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
 				},
 				{
-					"cardHeading": "CREATE AND SHARE YOUR PHOTO STORIES.",
-					"cardText": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
+					"cardHeading": "DESIGNED FOR EVERYONE",
+					"cardText": "Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it.",
 					"cardImages": [		
-						{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241058/photosnap/home/mobile/rydd2dkx3ullwumtst23.jpg"} ,
-						{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241063/photosnap/home/tablet/rqkfw20xkjhndgqztcvz.jpg"} ,
-						{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241064/photosnap/home/desktop/hfqazblnokdxsvncjjmy.jpg"} 
+						{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241065/photosnap/home/mobile/tssnsjvkhvg4ybrzmepa.jpg"} ,
+						{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241068/photosnap/home/tablet/qr1ucvpf56rbaezivvjf.jpg"} ,
+						{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241063/photosnap/home/desktop/cyzoeoodjzhpdrkzymx1.jpg"} 
 					],
 					"button": {"btnLabel": "GET AN INVITE"},
 					"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
