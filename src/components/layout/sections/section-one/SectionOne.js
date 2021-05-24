@@ -4,8 +4,13 @@ import Card from "../../../ui/card/Card";
 
 const Cards = ({ cardsContent }) => {
 	console.log(cardsContent);
+	let imgRight = "img-right";
+
 	return cardsContent.map((content, idx) => {
 		const { cardHeading, cardText, cardImages, button, icon } = content;
+
+		imgRight = imgRight === "img-right" ? "" : "img-right";
+
 		return (
 			<Card
 				hType="h2"
@@ -15,6 +20,7 @@ const Cards = ({ cardsContent }) => {
 				btnLabel={button.btnLabel}
 				icon={icon.url}
 				stylesClass="card-primary"
+				imgRight={imgRight}
 				key={idx}
 			/>
 		);
