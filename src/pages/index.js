@@ -73,14 +73,11 @@ const Home = () => {
 		}
 	`);
 
-	console.log(query);
-
 	const cardContent = query.dataJson.cards.headerPrimary;
 	const group1Content = query.dataJson.cards.group1;
 	const group2Content = query.dataJson.cards.group2;
 	const group3Content = query.dataJson.cards.group3;
 
-	console.log(group2Content);
 	return (
 		<Layout>
 			<Header

@@ -1,8 +1,22 @@
 import React from "react";
 import { Link } from "gatsby";
 
-const Links = ({ links }) => {
-	return links.map((link, idx) => {
+import Img from "../../ui/image/Img";
+
+const Links = ({ menuLinks, linksType }) => {
+	if (linksType === "images") {
+		return menuLinks.map((link, idx) => {
+			const { linkUrl, imgUrl } = link;
+
+			return (
+				<Link to={linkUrl} className="menu-link" key={idx}>
+					<Img url={imgUrl} />
+				</Link>
+			);
+		});
+	}
+
+	return menuLinks.map((link, idx) => {
 		const { linkUrl, linkLabel } = link;
 
 		return (
@@ -13,10 +27,10 @@ const Links = ({ links }) => {
 	});
 };
 
-const Menu = ({ stylesClass, menuLinks }) => {
+const Menu = ({ stylesClass, menuLinks, linksType }) => {
 	return (
 		<div className={`menu ${stylesClass}`}>
-			<Links links={menuLinks} />
+			<Links menuLinks={menuLinks} linksType={linksType} />
 		</div>
 	);
 };

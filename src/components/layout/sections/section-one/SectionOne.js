@@ -3,7 +3,6 @@ import React from "react";
 import Card from "../../../ui/card/Card";
 
 const Cards = ({ cardsContent }) => {
-	console.log(cardsContent);
 	const { button, icon } = cardsContent;
 	let imgRight = "img-right";
 

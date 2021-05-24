@@ -1,12 +1,23 @@
 [
 	{
+		"logo": {"logoUrl": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241087/photosnap/shared/desktop/ykufpoveea1twje8dyvx.svg"},
+		"logoSecond": {"logoUrl": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621865058/photosnap/shared/desktop/sbog1hoc0kfbbr5rl90f.svg"},
 		"links": {
+			"socialLinks": [
+				{"linkUrl": "#", "imgUrl": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241087/photosnap/shared/desktop/o0starsmggmi9mveyw5m.svg"},
+				{"linkUrl": "#", "imgUrl": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241090/photosnap/shared/desktop/vxp727qvzhlpixlbptey.svg"},
+				{"linkUrl": "#", "imgUrl": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241088/photosnap/shared/desktop/rk7izuncdocc1oxapwwa.svg"},
+				{"linkUrl": "#", "imgUrl": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241087/photosnap/shared/desktop/tdki3vk4adp1z3giduxp.svg"}
+			],
 			"mainLinks": [
 				{"linkUrl": "/", "linkLabel": "home"},
 				{"linkUrl": "/stories", "linkLabel": "stories"},
 				{"linkUrl": "/features", "linkLabel": "features"},
 				{"linkUrl": "/pricing", "linkLabel": "pricing"}
 			]
+		},
+		"icons": {
+			"arrowIconFirst": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
 		},
 		"buttons": {
 			"invite": {"btnLabel": "GET AN INVITE"}
@@ -120,6 +131,10 @@
 
 				]
 			}
+		},
+
+		"text": {
+			"copyright": "Copyright 2019. All Rights Reserved"
 		}
 		
 	}

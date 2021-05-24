@@ -24,7 +24,6 @@ const MenuBar = ({ stylesClass }) => {
 		}
 	`);
 
-	console.log(query);
 	const { btnLabel } = query.dataJson.buttons.invite;
 	const { mainLinks } = query.dataJson.links;
 

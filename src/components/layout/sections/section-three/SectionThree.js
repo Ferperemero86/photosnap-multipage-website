@@ -3,11 +3,9 @@ import React from "react";
 import Card from "../../../ui/card/Card";
 
 const Cards = ({ cardsContent }) => {
-	console.log(cardsContent);
-
 	return cardsContent.cards.map((content, idx) => {
 		const { cardHeading, cardText, cardImages } = content;
-		console.log(cardImages);
+
 		return (
 			<Card
 				hType="h3"
