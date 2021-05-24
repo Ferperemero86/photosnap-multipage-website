@@ -1,0 +1,11 @@
+.section-three {
+	padding: 2rem;
+	max-width: 90rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include breakpoint-up("md") {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

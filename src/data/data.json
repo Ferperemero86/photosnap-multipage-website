@@ -92,6 +92,33 @@
 					}
 
 				]
+			},
+			"group3": {
+				"cards": [
+
+					{
+						"cardImages": [
+							{"size": "unique" , "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241043/photosnap/features/desktop/pewybacwfmjfigremawr.svg"}
+						],
+							"cardHeading": "100% Responsive",
+							"cardText": "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen."
+					},
+					{
+						"cardImages": [
+							{"size": "unique" , "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241044/photosnap/features/desktop/zcemjvl8y4mmzu504wlo.svg"}
+						],
+							"cardHeading": "No Photo Upload Limit",
+							"cardText": "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go."
+					},
+					{
+						"cardImages": [
+							{"size": "unique" , "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241043/photosnap/features/desktop/kiz1meunvjgwfr6ccrbl.svg"}
+						],
+							"cardHeading": "Available to Embed",
+							"cardText": "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. "
+					}
+
+				]
 			}
 		}
 		

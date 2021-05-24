@@ -16,7 +16,13 @@ const HeaderImage = ({ cardImages, stylesClass }) => {
 		const { size, url } = card;
 
 		const imgClass =
-			size === "sm" ? "sm-img" : size === "md" ? "md-img" : "lg-img";
+			size === "sm"
+				? "sm-img"
+				: size === "md"
+				? "md-img"
+				: size === "lg"
+				? "lg-img"
+				: "";
 
 		return (
 			<Img
@@ -42,6 +48,7 @@ const CardBody = ({
 	hType,
 	hText,
 	pText,
+	btnDisplay,
 	btnLabel,
 	icon,
 	separatorDisplay
@@ -53,6 +60,7 @@ const CardBody = ({
 			<Button
 				stylesClass={`card-body-btn ${stylesClass}-body-btn`}
 				label={btnLabel}
+				btnDisplay={btnDisplay}
 			/>
 			<Img url={icon} stylesClass={`card-body-icon ${stylesClass}-body-icon`} />
 		</div>
@@ -65,6 +73,7 @@ const Card = ({
 	hType,
 	hText,
 	pText,
+	btnDisplay,
 	btnLabel,
 	icon,
 	imgRight,
@@ -77,6 +86,7 @@ const Card = ({
 				hType={hType}
 				hText={hText}
 				pText={pText}
+				btnDisplay={btnDisplay}
 				btnLabel={btnLabel}
 				icon={icon}
 				separatorDisplay={separatorDisplay}

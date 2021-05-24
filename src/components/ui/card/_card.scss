@@ -9,7 +9,7 @@
 	&-body {
 
 		@extend .container;
-		@include padding-y(4.5rem);
+		//@include padding-y(4.5rem);
 
 		&-separator {
 
@@ -19,6 +19,7 @@
 		&-btn {
 
 			background: none;
+			margin-top: 1.5rem;
 		}
 
 		&-icon {
@@ -26,6 +27,10 @@
 			margin-left: 1rem;
 		}
 
+
+		@include breakpoint-up("md") {
+			padding: 2rem;
+		}
 
 	}
 
@@ -49,6 +54,8 @@
 	}
 
 	&-body {
+		@include padding-y(4.5rem);
+
 
 		&-btn {
 
@@ -95,15 +102,29 @@
 
 		position: absolute;
 		padding: 0rem 2rem;
-		bottom: 1rem;
+		bottom: 2rem;
 		@include color("third");
 
 		&-btn {
 
 			@include color("third");
-			margin-top: 1.5rem;
 		}
 	}
 
 }
 
+
+//// CARD THREE //// 
+
+.card-three {
+	text-align: center;
+
+	&-header {
+
+		width: 4.5rem;
+		height: 4rem;
+		margin: 3rem auto;
+		display: flex;
+		align-items: center;
+	}
+}
