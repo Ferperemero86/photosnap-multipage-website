@@ -6,7 +6,7 @@ const Header = ({ stylesClass, cardContent, hType }) => {
 	const { cardHeading, cardText, cardImages } = cardContent;
 	const { btnLabel } = cardContent.button;
 	const { icon } = cardContent;
-	console.log(cardContent, btnLabel);
+
 	return (
 		<div className={`${stylesClass}`}>
 			<div className={`${stylesClass}-content`}>

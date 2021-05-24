@@ -23,7 +23,6 @@
 
 
 		@include breakpoint-up("md") {
-			height: 40rem;
 			width: 35%;
 		}
 
@@ -34,10 +33,14 @@
 	}
 
 	&-body {
+
+		&-btn {
+
+			background: none;
+		}
 		
 
 		@include breakpoint-up("md") {
-			width: 65%;
 			justify-self: center;
 			align-self: center;
 		}
