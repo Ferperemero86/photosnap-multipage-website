@@ -4,17 +4,15 @@ import Card from "../../ui/card/Card";
 import Img from "../../ui/image/Img";
 
 const HeaderBackground = ({ backgroundImages }) => {
-	if (backgroundImages) {
-		return backgroundImages.map((img, idx) => {
-			return (
-				<Img
-					url={img.url}
-					key={idx}
-					stylesClass={`${img.size}-img img-fluid`}
-				/>
-			);
-		});
+	if (!backgroundImages) {
+		return null;
 	}
+
+	return backgroundImages.map((img, idx) => {
+		return (
+			<Img url={img.url} key={idx} stylesClass={`${img.size}-img img-fluid`} />
+		);
+	});
 };
 
 const Header = ({ stylesClass, cardContent, hType, cardClass }) => {

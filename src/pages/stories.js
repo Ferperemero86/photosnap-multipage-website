@@ -47,7 +47,6 @@ const Stories = () => {
 
 	const cardContent = query.dataJson.cards.headerSecond;
 	const group4Content = query.dataJson.cards.group4;
-	console.log(cardContent);
 
 	return (
 		<Layout>
