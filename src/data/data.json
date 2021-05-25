@@ -34,6 +34,20 @@
 					"button": {"btnLabel": "GET AN INVITE"},
 					"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
 			},
+			"headerSecond": {
+				"backgroundImages": [
+					{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241116/photosnap/stories/mobile/ppmvsg2qv3shfrtakxrs.jpg"} ,
+					{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241124/photosnap/stories/tablet/eul20rkejyemrziqjiwm.jpg"} ,
+					{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241109/photosnap/stories/desktop/e84zrlgi0rhmgwohiegc.jpg"} 
+				],
+				"cardHeading": "CREATE AND SHARE YOUR PHOTO STORIES.",
+				"cardText": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
+				"cardImages": [		
+				
+				],
+				"button": {"btnLabel": "GET AN INVITE"},
+				"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
+			},
 			"group1": {
 				"button": {"btnLabel": "GET AN INVITE"},
 				"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241086/photosnap/shared/desktop/ckbv0rzdfatybcposjwo.svg"},
@@ -130,9 +144,161 @@
 					}
 
 				]
+			},
+			"group4": {
+				"button": {"btnLabel": "READ STORY"},
+				"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"},
+				"cards": [
+
+					{
+						"cardHeading": "The Mountains",
+						"cardText":  "by John Applessed",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241122/photosnap/stories/mobile/izq8uxwmvmazgyuv7yky.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241105/photosnap/stories/desktop/hzxyuk8mgzeo67ukclts.jpg"} ,
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241105/photosnap/stories/desktop/hzxyuk8mgzeo67ukclts.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "Sunset Cityscapes",
+						"cardText":  "by Benjamin Cruz",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241115/photosnap/stories/mobile/z4hzkkdvmo9fui2e46ow.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/d4qptt5wwy24ldifb6ra.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/d4qptt5wwy24ldifb6ra.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "18 Days Voyage",
+						"cardText":  "by Alexei Borodin",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241112/photosnap/stories/mobile/os55hmmtbfqvo99dj3un.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241096/photosnap/stories/desktop/tcunkdhd8r9sipes5hcx.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241096/photosnap/stories/desktop/tcunkdhd8r9sipes5hcx.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "Architecturals",
+						"cardText":  "by Samantha Brooke",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241114/photosnap/stories/mobile/gldnkbb531okskljrzuc.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/kafh6drtvcnmsmlj8sjc.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/kafh6drtvcnmsmlj8sjc.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "Calm Waters",
+						"cardText":  "by Samantha Brooke",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241114/photosnap/stories/mobile/lg0obaa4znqx2wz0fk0g.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241114/photosnap/stories/mobile/lg0obaa4znqx2wz0fk0g.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241099/photosnap/stories/desktop/y1pooiymdqdkto3zi0ml.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "Unforeseen Corners",
+						"cardText":  "by William Malcolm",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241122/photosnap/stories/mobile/papuyo2girqiujovyakn.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241122/photosnap/stories/mobile/papuyo2girqiujovyakn.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241111/photosnap/stories/desktop/xnscbdnnye3zvrcknvyg.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "King on Africa: Part II",
+						"cardText":  "by Tim Hillenburg",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241117/photosnap/stories/mobile/ivnnnhzxoq8rh5gnuled.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241117/photosnap/stories/mobile/ivnnnhzxoq8rh5gnuled.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241103/photosnap/stories/desktop/v00qpn9w844gvbzpkrr8.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "The Trip to Nowhere",
+						"cardText":  "by Felicia Rourke",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241120/photosnap/stories/mobile/ekivkq1pv6ifcv1dtetm.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241120/photosnap/stories/mobile/ekivkq1pv6ifcv1dtetm.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241109/photosnap/stories/desktop/xy1kvrdomlfeck1ysfxf.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "Rage of The Sea",
+						"cardText":  "by Mohammed Abdul",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241118/photosnap/stories/mobile/blb6aogadfchj6c0myrc.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241118/photosnap/stories/mobile/blb6aogadfchj6c0myrc.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241108/photosnap/stories/desktop/erc9i2dyf0o3qyukgywl.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "Running Free",
+						"cardText":  "by Michelle",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241123/photosnap/stories/mobile/jj7vhmwnqlb3y3nb0dsp.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241123/photosnap/stories/mobile/jj7vhmwnqlb3y3nb0dsp.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241106/photosnap/stories/desktop/ueic3wh0txybjyxu0pjj.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "Behind the Waves",
+						"cardText":  "by Lamarr Wilson",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241113/photosnap/stories/mobile/h3ttrv9ac3uj0eoszrit.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241113/photosnap/stories/mobile/h3ttrv9ac3uj0eoszrit.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241103/photosnap/stories/desktop/ea8tlzpoy06aopgbpofg.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "Calm Waters",
+						"cardText":  "by Samantha Brooke",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241114/photosnap/stories/mobile/lg0obaa4znqx2wz0fk0g.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241114/photosnap/stories/mobile/lg0obaa4znqx2wz0fk0g.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241099/photosnap/stories/desktop/y1pooiymdqdkto3zi0ml.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "The Milky Way",
+						"cardText":  "by Benjamin Cruz",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241120/photosnap/stories/mobile/onzvcm74miejrxkrh85q.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241120/photosnap/stories/mobile/onzvcm74miejrxkrh85q.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241107/photosnap/stories/desktop/vvfhpli86yo9ixrvga9h.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "Night at The Dark Forest",
+						"cardText":  "by  Mohammed Abdul",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241117/photosnap/stories/mobile/kh8ggmxqyj4541rnpdxv.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241117/photosnap/stories/mobile/kh8ggmxqyj4541rnpdxv.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241100/photosnap/stories/desktop/ukgsd7bwxh7jzrhsr4uy.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "Somwarpet’s Beauty",
+						"cardText":  "by Michelle",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241120/photosnap/stories/mobile/ehbptui9gwefiqkubemg.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241120/photosnap/stories/mobile/ehbptui9gwefiqkubemg.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241111/photosnap/stories/desktop/vmy15lhc7ndwhfmig9ua.jpg"} 
+						]
+					},
+					{
+						"cardHeading": "Land of Dreams",
+						"cardText":  "by William Malcolm",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241117/photosnap/stories/mobile/j7mmhpjvjq0ahzewvba6.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241117/photosnap/stories/mobile/j7mmhpjvjq0ahzewvba6.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241104/photosnap/stories/desktop/ogwdjsp7onbj2qh2m25e.jpg"} 
+						]
+					}
+
+				]
 			}
 		},
-
+		
 		"text": {
 			"copyright": "Copyright 2019. All Rights Reserved"
 		}

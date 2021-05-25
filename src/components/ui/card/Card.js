@@ -34,14 +34,20 @@ const HeaderImage = ({ cardImages, stylesClass }) => {
 	});
 };
 
-const CardHeader = ({ stylesClass, cardImages }) => (
-	<div className={`card-header ${stylesClass}-header img-responsive`}>
-		<HeaderImage
-			cardImages={cardImages}
-			stylesClass={`${stylesClass}-header`}
-		/>
-	</div>
-);
+const CardHeader = ({ stylesClass, cardImages }) => {
+	if (!cardImages) {
+		return null;
+	}
+
+	return (
+		<div className={`card-header ${stylesClass}-header img-responsive`}>
+			<HeaderImage
+				cardImages={cardImages}
+				stylesClass={`${stylesClass}-header`}
+			/>
+		</div>
+	);
+};
 
 const CardBody = ({
 	stylesClass,

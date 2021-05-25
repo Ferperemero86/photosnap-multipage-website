@@ -83,6 +83,7 @@ const Home = () => {
 			<Header
 				stylesClass="header-primary"
 				cardContent={cardContent}
+				cardClass="card-primary"
 				hType="h2"
 			/>
 			<main>

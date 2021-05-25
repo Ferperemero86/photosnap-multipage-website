@@ -39,14 +39,11 @@ const Footer = () => {
 		}
 	`);
 
-	console.log("FOOTER", query);
 	const { logoUrl } = query.dataJson.logoSecond;
 	const { socialLinks, mainLinks } = query.dataJson.links;
 	const { btnLabel } = query.dataJson.buttons.invite;
 	const { arrowIconFirst } = query.dataJson.icons;
 	const { copyright } = query.dataJson.text;
-
-	console.log(socialLinks);
 
 	return (
 		<footer className="footer container">
