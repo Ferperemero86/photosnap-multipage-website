@@ -325,11 +325,23 @@
 							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241104/photosnap/stories/desktop/ogwdjsp7onbj2qh2m25e.jpg"} 
 						]
 					}
-
+				]
+			},
+			"group5": {
+				"cards": [
+					{
+						"cardHeading": "We’re in beta. Get your invite today!",
+						"cardImages": [		
+							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241090/photosnap/shared/mobile/tfqbmtzhyysncwralpfe.jpg"} ,
+							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241092/photosnap/shared/tablet/nvqhyeeuhrwcixeqfvit.jpg"},
+							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241088/photosnap/shared/desktop/ubzmzkjmhbr16x67cl17.jpg"} 
+						],
+						"cardButton": { "invite": {"btnLabel": "GET AN INVITE"} },
+						"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
+					}
 				]
 			}
 		},
-		
 		"text": {
 			"copyright": "Copyright 2019. All Rights Reserved"
 		}

@@ -1,0 +1,30 @@
+.section-four {
+	position: relative;
+	border: 1px solid;
+}
+
+.section-four-background {
+	
+}
+
+.section-four-content {
+	position: absolute;
+	@include vertical-alignment;
+	@include color("third");
+
+
+	&-btn {
+
+		background: none;
+		margin-right: 1rem;
+		@include color("third");
+	}
+
+
+	@include breakpoint-up("md") {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+}
