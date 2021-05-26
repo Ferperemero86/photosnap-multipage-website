@@ -2,9 +2,13 @@ import React from "react";
 
 import Card from "../../../ui/card/Card";
 
-const Cards = ({ cardsContent }) => {
+const Cards = ({ cardsContent, cardsNumber }) => {
 	return cardsContent.cards.map((content, idx) => {
 		const { cardHeading, cardText, cardImages } = content;
+
+		if (cardsNumber && idx + 1 > cardsNumber) {
+			return null;
+		}
 
 		return (
 			<Card
@@ -22,9 +26,9 @@ const Cards = ({ cardsContent }) => {
 	});
 };
 
-const SectionThree = ({ cardsContent }) => (
+const SectionThree = ({ cardsContent, cardsNumber }) => (
 	<div className="section-three">
-		<Cards cardsContent={cardsContent} />
+		<Cards cardsContent={cardsContent} cardsNumber={cardsNumber} />
 	</div>
 );
 

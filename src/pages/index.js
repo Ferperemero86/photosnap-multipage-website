@@ -89,7 +89,7 @@ const Home = () => {
 			<main>
 				<SectionOne cardsContent={group1Content} />
 				<SectionTwo cardsContent={group2Content} />
-				<SectionThree cardsContent={group3Content} />
+				<SectionThree cardsContent={group3Content} cardsNumber="3" />
 			</main>
 		</Layout>
 	);
