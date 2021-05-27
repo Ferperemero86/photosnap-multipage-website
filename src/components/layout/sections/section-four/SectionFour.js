@@ -17,7 +17,7 @@ const SectionFour = ({ cardsContent }) => {
 	const cardButton = cardsContent.cards[0].cardButton.invite.btnLabel;
 	const images = cardsContent.cards[0].cardImages;
 	const icon = cardsContent.cards[0].icon;
-	console.log(cardsContent);
+
 	return (
 		<div className="section-four">
 			<div className="section-four-background img-responsive">

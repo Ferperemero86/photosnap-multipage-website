@@ -61,8 +61,6 @@ const Features = () => {
 	const group3Content = query.dataJson.cards.group3;
 	const group5Content = query.dataJson.cards.group5;
 
-	console.log(group5Content);
-
 	return (
 		<Layout>
 			<Header
