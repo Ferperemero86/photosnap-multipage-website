@@ -1,12 +1,14 @@
 const data = {
-	logos: {
-		mainLogo: {
+	logos: [
+		{
+			name: "mainLogo",
 			url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241087/photosnap/shared/desktop/ykufpoveea1twje8dyvx.svg"
 		},
-		logoSecond: {
+		{
+			name: "logoSecond",
 			url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621865058/photosnap/shared/desktop/sbog1hoc0kfbbr5rl90f.svg"
 		}
-	},
+	],
 	links: {
 		socialLinks: [
 			{

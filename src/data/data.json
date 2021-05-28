@@ -20,7 +20,8 @@
 			"arrowIconFirst": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
 		},
 		"buttons": {
-			"invite": {"btnLabel": "GET AN INVITE"}
+			"invite": {"btnLabel": "GET AN INVITE"},
+			"story": {"btnLabel": "READ STORY"}
 		},
 		"cards": {
 			"headerPrimary": {
@@ -30,9 +31,7 @@
 						{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241058/photosnap/home/mobile/rydd2dkx3ullwumtst23.jpg"} ,
 						{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241063/photosnap/home/tablet/rqkfw20xkjhndgqztcvz.jpg"} ,
 						{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241064/photosnap/home/desktop/hfqazblnokdxsvncjjmy.jpg"} 
-					],
-					"button": {"btnLabel": "GET AN INVITE"},
-					"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
+					]
 			},
 			"headerSecond": {
 				"backgroundImages": [
@@ -42,11 +41,7 @@
 				],
 				"cardHeading": "CREATE AND SHARE YOUR PHOTO STORIES.",
 				"cardText": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
-				"cardImages": [		
-				
-				],
-				"button": {"btnLabel": "GET AN INVITE"},
-				"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
+				"cardImages": []
 			},
 			"headerThird": {
 				"cardImages": [
@@ -55,24 +50,19 @@
 					{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241045/photosnap/features/desktop/t4jmhzzglyxskjk58sgq.jpg"} 
 				],
 				"cardHeading": "CREATE AND SHARE YOUR PHOTO STORIES.",
-				"cardText": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
-				"button": {"btnLabel": "GET AN INVITE"},
-				"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"}
+				"cardText": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others."
 			},
-			"group1": {
-				"button": {"btnLabel": "GET AN INVITE"},
-				"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241086/photosnap/shared/desktop/ckbv0rzdfatybcposjwo.svg"},
-				"cards": [
-
-					{
-						"cardHeading": "BEAUTIFUL STORIES EVERY TIME",
-						"cardText": "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
-						"cardImages": [		
-							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241060/photosnap/home/mobile/otw1omtz4ynvsb3dnd3x.jpg"} ,
-							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241066/photosnap/home/tablet/tin3whur8m7imucsudsq.jpg"} ,
-							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241065/photosnap/home/desktop/y2bpo2t3s5tbfl7ki6lg.jpg"} 
+			"group1": [
+				
+				{
+					"cardHeading": "BEAUTIFUL STORIES EVERY TIME",
+					"cardText": "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
+					"cardImages": [		
+						{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241060/photosnap/home/mobile/otw1omtz4ynvsb3dnd3x.jpg"} ,
+						{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241066/photosnap/home/tablet/tin3whur8m7imucsudsq.jpg"} ,
+						{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241065/photosnap/home/desktop/y2bpo2t3s5tbfl7ki6lg.jpg"} 
 						]
-					},
+				},
 					{
 						"cardHeading": "DESIGNED FOR EVERYONE",
 						"cardText": "Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it.",
@@ -83,11 +73,9 @@
 						]
 					}
 
-				]
-			},
+				
+				],
 			"group2": {
-				"button": {"btnLabel": "READ STORY"},
-				"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"},
 				"cards": [
 
 					{
@@ -177,46 +165,8 @@
 				]
 			},
 			"group4": {
-				"button": {"btnLabel": "READ STORY"},
-				"icon": {"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"},
+			
 				"cards": [
-
-					{
-						"cardHeading": "The Mountains",
-						"cardText":  "by John Applessed",
-						"cardImages": [		
-							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241122/photosnap/stories/mobile/izq8uxwmvmazgyuv7yky.jpg"} ,
-							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241105/photosnap/stories/desktop/hzxyuk8mgzeo67ukclts.jpg"} ,
-							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241105/photosnap/stories/desktop/hzxyuk8mgzeo67ukclts.jpg"} 
-						]
-					},
-					{
-						"cardHeading": "Sunset Cityscapes",
-						"cardText":  "by Benjamin Cruz",
-						"cardImages": [		
-							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241115/photosnap/stories/mobile/z4hzkkdvmo9fui2e46ow.jpg"} ,
-							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/d4qptt5wwy24ldifb6ra.jpg"},
-							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/d4qptt5wwy24ldifb6ra.jpg"} 
-						]
-					},
-					{
-						"cardHeading": "18 Days Voyage",
-						"cardText":  "by Alexei Borodin",
-						"cardImages": [		
-							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241112/photosnap/stories/mobile/os55hmmtbfqvo99dj3un.jpg"} ,
-							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241096/photosnap/stories/desktop/tcunkdhd8r9sipes5hcx.jpg"},
-							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241096/photosnap/stories/desktop/tcunkdhd8r9sipes5hcx.jpg"} 
-						]
-					},
-					{
-						"cardHeading": "Architecturals",
-						"cardText":  "by Samantha Brooke",
-						"cardImages": [		
-							{"size": "sm", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241114/photosnap/stories/mobile/gldnkbb531okskljrzuc.jpg"} ,
-							{"size": "md", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/kafh6drtvcnmsmlj8sjc.jpg"},
-							{"size": "lg", "url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241101/photosnap/stories/desktop/kafh6drtvcnmsmlj8sjc.jpg"} 
-						]
-					},
 					{
 						"cardHeading": "Calm Waters",
 						"cardText":  "by Samantha Brooke",
