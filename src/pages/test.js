@@ -1,21 +1,22 @@
 import React from "react";
-import { gql } from "@apollo/client";
+import { useQuery, gql } from "@apollo/client";
 
-import { client } from "../API/client";
+const EXCHANGE_RATES = gql`
+	query GetBooks {
+		books {
+			title
+			author
+		}
+	}
+`;
 
 const Test = () => {
-	client
-		.query({
-			query: gql`
-				query GetBooks {
-					books {
-						title
-						author
-					}
-				}
-			`
-		})
-		.then((result) => console.log(result));
+	const { loading, data } = useQuery(EXCHANGE_RATES);
+
+	if (loading === false) {
+		console.log("DATA", data.books);
+	}
+
 	return <h1>Test</h1>;
 };
 
