@@ -3,16 +3,28 @@ import React from "react";
 import { useQuery, gql } from "@apollo/client";
 
 import Layout from "../components/layout/Layout";
-// import Header from "../components/layout/header/Header";
+import Header from "../components/layout/header/Header";
 // import SectionOne from "../components/layout/sections/section-one/SectionOne";
 // import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
 // import SectionThree from "../components/layout/sections/section-three/SectionThree";
 
 const query = gql(`
 	query getHomeContent {
-		logos {
+		button(name:"invite") {
+			name
+			label
+		}
+		icon(name:"arrowIconFirst") {
 			name
 			url
+		}
+		card(category: "primaryHeader") {
+			heading
+			text
+  	  images {
+        size
+        url
+      }
 		}
 	}
 `);
@@ -21,17 +33,20 @@ const Home = () => {
 	const { loading, data } = useQuery(query);
 
 	if (!loading) {
-		// const mainLogo = data.logos.find((obj) => obj.name === "mainLogo");
+		console.log("data", data.card);
+		const { card, button, icon } = data;
 
 		return (
-			// <h1>Test</h1>
-			<Layout></Layout>
-			// <Header
-			// stylesClass="header-primary"
-			// cardContent={cardContent}
-			// cardClass="card-primary"
-			// hType="h2"
-			/// >
+			<Layout>
+				<Header
+					stylesClass="header-primary"
+					cardContent={card}
+					button={button}
+					icon={icon}
+					cardClass="card-primary"
+					hType="h2"
+				/>
+			</Layout>
 			// <main>
 			// <SectionOne cardsContent={group1Content} />
 			// <SectionTwo cardsContent={group2Content} />

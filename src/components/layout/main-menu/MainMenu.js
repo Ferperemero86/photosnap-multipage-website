@@ -30,7 +30,6 @@ const MenuBar = ({ stylesClass }) => {
 	const { loading, data } = useQuery(query);
 
 	if (!loading) {
-		console.log(data);
 		const { logo, menu, button } = data;
 		return (
 			<div className={`main-menu-bar ${stylesClass}`}>

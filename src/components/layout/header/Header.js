@@ -15,23 +15,28 @@ const HeaderBackground = ({ backgroundImages }) => {
 	});
 };
 
-const Header = ({ stylesClass, cardContent, hType, cardClass }) => {
-	const { cardHeading, cardText, cardImages, icon, backgroundImages } =
-		cardContent;
-	const { btnLabel } = cardContent.button;
+const Header = ({
+	stylesClass,
+	cardContent,
+	button,
+	icon,
+	hType,
+	cardClass
+}) => {
+	const { heading, text, images } = cardContent;
 
 	return (
 		<div className={`${stylesClass}`}>
 			<div className={`${stylesClass}-background img-responsive`}>
-				<HeaderBackground backgroundImages={backgroundImages} />
+				<HeaderBackground backgroundImages="" />
 			</div>
 			<div className={`${stylesClass}-content`}>
 				<Card
 					hType={hType}
-					hText={cardHeading}
-					pText={cardText}
-					cardImages={cardImages}
-					btnLabel={btnLabel}
+					hText={heading}
+					pText={text}
+					cardImages={images}
+					btnLabel={button.label}
 					icon={icon.url}
 					stylesClass={cardClass}
 					imgRight="img-right"
