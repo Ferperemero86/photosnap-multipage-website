@@ -10,7 +10,6 @@ const Layout = ({ children }) => {
 		<div className="wrapper">
 			<MainMenu />
 			<main>{children}</main>
-			<Footer />
 		</div>
 	);
 };

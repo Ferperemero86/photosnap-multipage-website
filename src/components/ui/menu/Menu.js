@@ -6,22 +6,22 @@ import Img from "../../ui/image/Img";
 const Links = ({ menuLinks, linksType }) => {
 	if (linksType === "images") {
 		return menuLinks.map((link, idx) => {
-			const { linkUrl, imgUrl } = link;
+			const { url, label } = link;
 
 			return (
-				<Link to={linkUrl} className="menu-link" key={idx}>
-					<Img url={imgUrl} />
+				<Link to={url} className="menu-link" key={idx}>
+					<Img url={label} />
 				</Link>
 			);
 		});
 	}
 
 	return menuLinks.map((link, idx) => {
-		const { linkUrl, linkLabel } = link;
+		const { url, label } = link;
 
 		return (
-			<Link to={linkUrl} className="menu-link" key={idx}>
-				{linkLabel}
+			<Link to={url} className="menu-link" key={idx}>
+				{label}
 			</Link>
 		);
 	});

@@ -9,45 +9,57 @@ const data = {
 			url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621865058/photosnap/shared/desktop/sbog1hoc0kfbbr5rl90f.svg"
 		}
 	],
-	links: {
-		socialLinks: [
-			{
-				linkUrl: "#",
-				imgUrl:
-					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241087/photosnap/shared/desktop/o0starsmggmi9mveyw5m.svg"
-			},
-			{
-				linkUrl: "#",
-				imgUrl:
-					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241090/photosnap/shared/desktop/vxp727qvzhlpixlbptey.svg"
-			},
-			{
-				linkUrl: "#",
-				imgUrl:
-					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241088/photosnap/shared/desktop/rk7izuncdocc1oxapwwa.svg"
-			},
-			{
-				linkUrl: "#",
-				imgUrl:
-					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241087/photosnap/shared/desktop/tdki3vk4adp1z3giduxp.svg"
-			}
-		],
-		mainLinks: [
-			{ url: "/", label: "home" },
-			{ url: "/stories", label: "stories" },
-			{ url: "/features", label: "features" },
-			{ url: "/pricing", label: "pricing" }
-		]
-	},
+	menus: [
+		{
+			name: "socialMenu",
+			links: [
+				{
+					url: "#",
+					label:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241087/photosnap/shared/desktop/o0starsmggmi9mveyw5m.svg"
+				},
+				{
+					url: "#",
+					label:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241090/photosnap/shared/desktop/vxp727qvzhlpixlbptey.svg"
+				},
+				{
+					url: "#",
+					label:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241088/photosnap/shared/desktop/rk7izuncdocc1oxapwwa.svg"
+				},
+				{
+					url: "#",
+					label:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241087/photosnap/shared/desktop/tdki3vk4adp1z3giduxp.svg"
+				}
+			]
+		},
+		{
+			name: "mainMenu",
+			links: [
+				{ url: "/", label: "home" },
+				{ url: "/stories", label: "stories" },
+				{ url: "/features", label: "features" },
+				{ url: "/pricing", label: "pricing" }
+			]
+		}
+	],
 	icons: {
 		arrowIconFirst: {
 			url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621757167/photosnap/shared/desktop/nu9aotbfmqap9mnr2lfd.svg"
 		}
 	},
-	buttons: {
-		invite: { btnLabel: "GET AN INVITE" },
-		story: { btnLabel: "READ STORY" }
-	},
+	buttons: [
+		{
+			name: "invite",
+			label: "GET AN INVITE"
+		},
+		{
+			name: "story",
+			label: "READ STORY"
+		}
+	],
 	cards: {
 		headerPrimary: {
 			heading: "CREATE AND SHARE YOUR PHOTO STORIES.",

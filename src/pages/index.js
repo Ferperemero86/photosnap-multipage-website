@@ -2,7 +2,7 @@ import React from "react";
 // import { useStaticQuery, graphql } from "gatsby";
 import { useQuery, gql } from "@apollo/client";
 
-// import Layout from "../components/layout/Layout";
+import Layout from "../components/layout/Layout";
 // import Header from "../components/layout/header/Header";
 // import SectionOne from "../components/layout/sections/section-one/SectionOne";
 // import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
@@ -21,14 +21,11 @@ const Home = () => {
 	const { loading, data } = useQuery(query);
 
 	if (!loading) {
-		console.log("Data", data);
-		const mainLogo = data.logos.find((obj) => obj.name === "mainLogo");
-
-		console.log("MAIN lOGO", mainLogo);
+		// const mainLogo = data.logos.find((obj) => obj.name === "mainLogo");
 
 		return (
-			<h1>test</h1>
-			// <Layout>
+			// <h1>Test</h1>
+			<Layout></Layout>
 			// <Header
 			// stylesClass="header-primary"
 			// cardContent={cardContent}
@@ -40,7 +37,6 @@ const Home = () => {
 			// <SectionTwo cardsContent={group2Content} />
 			// <SectionThree cardsContent={group3Content} cardsNumber="3" />
 			// </main>
-			// </Layout>
 		);
 	}
 
