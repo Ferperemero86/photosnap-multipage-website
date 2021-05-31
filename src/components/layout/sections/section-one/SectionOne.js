@@ -2,21 +2,20 @@ import React from "react";
 
 import Card from "../../../ui/card/Card";
 
-const Cards = ({ cardsContent }) => {
-	const { button, icon } = cardsContent;
+const Cards = ({ cardsContent, button, icon }) => {
 	let imgRight = "img-right";
 
 	return cardsContent.cards.map((content, idx) => {
-		const { cardHeading, cardText, cardImages } = content;
+		const { heading, text, images } = content;
 
 		imgRight = imgRight === "img-right" ? "" : "img-right";
 
 		return (
 			<Card
 				hType="h2"
-				hText={cardHeading}
-				pText={cardText}
-				cardImages={cardImages}
+				hText={heading}
+				pText={text}
+				cardImages={images}
 				btnLabel={button.btnLabel}
 				icon={icon.url}
 				stylesClass="card-primary"

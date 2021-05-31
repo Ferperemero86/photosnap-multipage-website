@@ -1,6 +1,6 @@
 const data = require("../data");
 
-const { logos, menus, buttons, icons, cards } = data;
+const { logos, menus, buttons, icons, groupCards } = data;
 
 const resolvers = {
 	Query: {
@@ -16,19 +16,12 @@ const resolvers = {
 		icon: (root, args, context, info) => {
 			return icons.find((icon) => icon.name === args.name);
 		},
-		card: (root, args, context, info) => {
-			return cards.find((card) => card.name === args.name);
-		},
-		cards: (root, args, context, info) => {
-			const cardsSelected = cards.filter(
-				(card) => card.category === args.category
-			);
-
-			if (args.limit) {
-				return cardsSelected.slice(0, args.limit);
+		groupCards: (root, args, context, info) => {
+			if (args.category) {
+				return groupCards.filter((group) => args.category.includes(group.name));
 			}
 
-			return cardsSelected;
+			return groupCards;
 		}
 	}
 };

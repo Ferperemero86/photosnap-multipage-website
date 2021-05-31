@@ -38,13 +38,19 @@ const schema = gql`
 		images: [Image]!
 	}
 
+	type GroupCard {
+		name: String
+		cards: [Card!]!
+	}
+
 	type Query {
 		logo(name: String!): Logo
 		menu(name: String!): Menu
 		button(name: String!): Button
 		icon(name: String!): Icon
 		card(category: String!): Card
-		cards(category: String!, limit: Int): [Card]
+		cards(limit: Int): [Card]
+		groupCards(category: String): [GroupCard]
 	}
 `;
 
