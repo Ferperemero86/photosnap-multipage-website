@@ -3,9 +3,10 @@ import React from "react";
 import Card from "../../../ui/card/Card";
 
 const Cards = ({ cardsContent, button, icon }) => {
+	console.log(button);
 	let imgRight = "img-right";
 
-	return cardsContent.cards.map((content, idx) => {
+	return cardsContent.map((content, idx) => {
 		const { heading, text, images } = content;
 
 		imgRight = imgRight === "img-right" ? "" : "img-right";
@@ -16,7 +17,7 @@ const Cards = ({ cardsContent, button, icon }) => {
 				hText={heading}
 				pText={text}
 				cardImages={images}
-				btnLabel={button.btnLabel}
+				btnLabel={button.label}
 				icon={icon.url}
 				stylesClass="card-primary"
 				imgRight={imgRight}
@@ -26,9 +27,9 @@ const Cards = ({ cardsContent, button, icon }) => {
 	});
 };
 
-const SectionOne = ({ cardsContent }) => (
+const SectionOne = ({ cardsContent, button, icon }) => (
 	<div className="section-one">
-		<Cards cardsContent={cardsContent} />
+		<Cards cardsContent={cardsContent} button={button} icon={icon} />
 	</div>
 );
 

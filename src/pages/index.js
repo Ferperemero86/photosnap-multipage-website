@@ -4,7 +4,7 @@ import { useQuery, gql } from "@apollo/client";
 
 import Layout from "../components/layout/Layout";
 import Header from "../components/layout/header/Header";
-// import SectionOne from "../components/layout/sections/section-one/SectionOne";
+import SectionOne from "../components/layout/sections/section-one/SectionOne";
 // import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
 // import SectionThree from "../components/layout/sections/section-three/SectionThree";
 
@@ -51,7 +51,7 @@ const Home = () => {
 
 		const headerPrimaryCard = getGroupCards(groupCards, "headerPrimary");
 		const group1Cards = getGroupCards(groupCards, "group1");
-		console.log(headerPrimaryCard);
+		console.log(button);
 		return (
 			<Layout>
 				<Header
@@ -62,6 +62,7 @@ const Home = () => {
 					cardClass="card-primary"
 					hType="h2"
 				/>
+				<SectionOne cardsContent={group1Cards} button={button} icon={icon} />
 			</Layout>
 		);
 	}
@@ -69,7 +70,6 @@ const Home = () => {
 	return null;
 
 	/*
-	<SectionOne cardsContent={group1Content} />
 	<SectionTwo cardsContent={group2Content} />
 	<SectionThree cardsContent={group3Content} cardsNumber="3" />
 	 */

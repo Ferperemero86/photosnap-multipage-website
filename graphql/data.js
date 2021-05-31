@@ -171,7 +171,12 @@ const data = {
 							url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241063/photosnap/home/desktop/cyzoeoodjzhpdrkzymx1.jpg"
 						}
 					]
-				},
+				}
+			]
+		},
+		{
+			name: "group2",
+			cards: [
 				{
 					heading: "The Mountains",
 					text: "by John Applessed",
@@ -463,7 +468,7 @@ const data = {
 			]
 		},
 		{
-			name: "group2",
+			name: "group3",
 			cards: [
 				{
 					images: [
@@ -528,7 +533,7 @@ const data = {
 			]
 		},
 		{
-			name: "group3",
+			name: "group4",
 			cards: [
 				{
 					heading: "We’re in beta. Get your invite today!",
