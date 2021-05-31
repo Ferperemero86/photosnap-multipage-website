@@ -5,7 +5,7 @@ import { useQuery, gql } from "@apollo/client";
 import Layout from "../components/layout/Layout";
 import Header from "../components/layout/header/Header";
 import SectionOne from "../components/layout/sections/section-one/SectionOne";
-// import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
+import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
 // import SectionThree from "../components/layout/sections/section-three/SectionThree";
 
 const getGroupCards = (groups, groupName) => {
@@ -28,7 +28,7 @@ const query = gql(`
 			name
 			url
 		}
-		groupCards(category: "headerPrimary group1") {
+		groupCards(category: "headerPrimary group1 group2") {
 			name
 			cards {
 				heading
@@ -51,7 +51,8 @@ const Home = () => {
 
 		const headerPrimaryCard = getGroupCards(groupCards, "headerPrimary");
 		const group1Cards = getGroupCards(groupCards, "group1");
-		console.log(button);
+		const group2Cards = getGroupCards(groupCards, "group2");
+		console.log(group2Cards);
 		return (
 			<Layout>
 				<Header
@@ -63,6 +64,7 @@ const Home = () => {
 					hType="h2"
 				/>
 				<SectionOne cardsContent={group1Cards} button={button} icon={icon} />
+				<SectionTwo cardsContent={group2Cards} button={button} icon={icon} />
 			</Layout>
 		);
 	}
@@ -70,13 +72,8 @@ const Home = () => {
 	return null;
 
 	/*
-	<SectionTwo cardsContent={group2Content} />
 	<SectionThree cardsContent={group3Content} cardsNumber="3" />
 	 */
-	// const cardContent = query.dataJson.cards.headerPrimary;
-	// const group1Content = query.dataJson.cards.group1;
-	// const group2Content = query.dataJson.cards.group2;
-	// const group3Content = query.dataJson.cards.group3;
 };
 
 export default Home;

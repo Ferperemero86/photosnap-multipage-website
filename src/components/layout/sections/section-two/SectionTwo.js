@@ -2,19 +2,17 @@ import React from "react";
 
 import Card from "../../../ui/card/Card";
 
-const Cards = ({ cardsContent }) => {
-	const { button, icon } = cardsContent;
-
-	return cardsContent.cards.map((content, idx) => {
-		const { cardHeading, cardText, cardImages } = content;
+const Cards = ({ cardsContent, button, icon }) => {
+	return cardsContent.map((content, idx) => {
+		const { heading, text, images } = content;
 
 		return (
 			<Card
 				hType="h3"
-				hText={cardHeading}
-				pText={cardText}
-				cardImages={cardImages}
-				btnLabel={button.btnLabel}
+				hText={heading}
+				pText={text}
+				cardImages={images}
+				btnLabel={button.label}
 				icon={icon.url}
 				stylesClass="card-second"
 				imgRight=""
@@ -25,9 +23,9 @@ const Cards = ({ cardsContent }) => {
 	});
 };
 
-const SectionTwo = ({ cardsContent }) => (
+const SectionTwo = ({ cardsContent, button, icon }) => (
 	<div className="section-two">
-		<Cards cardsContent={cardsContent} />
+		<Cards cardsContent={cardsContent} button={button} icon={icon} />
 	</div>
 );
 
