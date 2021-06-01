@@ -1,26 +1,17 @@
 import React from "react";
-// import { useStaticQuery, graphql } from "gatsby";
 import { useQuery, gql } from "@apollo/client";
 
 import Layout from "../components/layout/Layout";
 import Header from "../components/layout/header/Header";
 import SectionOne from "../components/layout/sections/section-one/SectionOne";
 import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
-// import SectionThree from "../components/layout/sections/section-three/SectionThree";
+import SectionThree from "../components/layout/sections/section-three/SectionThree";
 
-const getGroupCards = (groups, groupName) => {
-	const group = groups.find((group) => group.name === groupName);
-
-	if (group.cards.length === 1) {
-		return group.cards[0];
-	}
-
-	return group.cards;
-};
+import { getCardsFromQuery, getElementFromQuery } from "../helpers";
 
 const query = gql(`
 	query getHomeContent {
-		button(name:"invite") {
+		buttons {
 			name
 			label
 		}
@@ -28,7 +19,7 @@ const query = gql(`
 			name
 			url
 		}
-		groupCards(category: "headerPrimary group1 group2") {
+		groupCards(category: "headerPrimary group1 group2 group3") {
 			name
 			cards {
 				heading
@@ -46,34 +37,45 @@ const Home = () => {
 	const { loading, data } = useQuery(query);
 
 	if (!loading) {
-		console.log("data", data);
-		const { groupCards, button, icon } = data;
+		const { groupCards, buttons, icon } = data;
 
-		const headerPrimaryCard = getGroupCards(groupCards, "headerPrimary");
-		const group1Cards = getGroupCards(groupCards, "group1");
-		const group2Cards = getGroupCards(groupCards, "group2");
-		console.log(group2Cards);
+		const headerPrimaryCard = getCardsFromQuery(groupCards, "headerPrimary");
+		const headerButton = getElementFromQuery(buttons, "invite");
+		const group1Cards = getCardsFromQuery(groupCards, "group1");
+		const group2Cards = getCardsFromQuery(groupCards, "group2", 4);
+		const group3Cards = getCardsFromQuery(groupCards, "group3", 3);
+		const cardButton = getElementFromQuery(buttons, "story");
+
 		return (
 			<Layout>
 				<Header
 					stylesClass="header-primary"
 					cardContent={headerPrimaryCard}
-					button={button}
+					button={headerButton}
 					icon={icon}
 					cardClass="card-primary"
 					hType="h2"
 				/>
-				<SectionOne cardsContent={group1Cards} button={button} icon={icon} />
-				<SectionTwo cardsContent={group2Cards} button={button} icon={icon} />
+				<SectionOne
+					cardsContent={group1Cards}
+					button={cardButton}
+					icon={icon}
+				/>
+				<SectionTwo
+					cardsContent={group2Cards}
+					button={cardButton}
+					icon={icon}
+				/>
+				<SectionThree
+					cardsContent={group3Cards}
+					button={cardButton}
+					icon={icon}
+				/>
 			</Layout>
 		);
 	}
 
 	return null;
-
-	/*
-	<SectionThree cardsContent={group3Content} cardsNumber="3" />
-	 */
 };
 
 export default Home;

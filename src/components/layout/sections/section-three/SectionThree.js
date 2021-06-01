@@ -2,20 +2,16 @@ import React from "react";
 
 import Card from "../../../ui/card/Card";
 
-const Cards = ({ cardsContent, cardsNumber }) => {
-	return cardsContent.cards.map((content, idx) => {
-		const { cardHeading, cardText, cardImages } = content;
-
-		if (cardsNumber && idx + 1 > cardsNumber) {
-			return null;
-		}
+const Cards = ({ cardsContent, button, icon }) => {
+	return cardsContent.map((content, idx) => {
+		const { heading, text, images } = content;
 
 		return (
 			<Card
 				hType="h3"
-				hText={cardHeading}
-				pText={cardText}
-				cardImages={cardImages}
+				hText={heading}
+				pText={text}
+				cardImages={images}
 				btnDisplay={false}
 				stylesClass="card-three"
 				imgRight=""
@@ -26,9 +22,9 @@ const Cards = ({ cardsContent, cardsNumber }) => {
 	});
 };
 
-const SectionThree = ({ cardsContent, cardsNumber }) => (
+const SectionThree = ({ cardsContent, button, icon }) => (
 	<div className="section-three">
-		<Cards cardsContent={cardsContent} cardsNumber={cardsNumber} />
+		<Cards cardsContent={cardsContent} />
 	</div>
 );
 

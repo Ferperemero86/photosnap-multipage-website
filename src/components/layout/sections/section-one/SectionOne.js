@@ -3,7 +3,6 @@ import React from "react";
 import Card from "../../../ui/card/Card";
 
 const Cards = ({ cardsContent, button, icon }) => {
-	console.log(button);
 	let imgRight = "img-right";
 
 	return cardsContent.map((content, idx) => {

@@ -40,16 +40,15 @@ const schema = gql`
 
 	type GroupCard {
 		name: String
-		cards: [Card!]!
+		cards(limit: Int): [Card!]!
 	}
 
 	type Query {
 		logo(name: String!): Logo
 		menu(name: String!): Menu
 		button(name: String!): Button
+		buttons(name: String): [Button]
 		icon(name: String!): Icon
-		card(category: String!): Card
-		cards(limit: Int): [Card]
 		groupCards(category: String): [GroupCard]
 	}
 `;
