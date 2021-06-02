@@ -4,11 +4,21 @@ const { logos, menus, buttons, icons, groupCards } = data;
 
 const resolvers = {
 	Query: {
-		logo: (root, args, context, info) => {
-			return logos.find((logo) => logo.name === args.name);
+		logos: (root, args, context, info) => {
+			if (args.name) {
+				return logos.filter((logo) => {
+					return args.name.includes(logo.name);
+				});
+			}
+			return logos;
 		},
-		menu: (root, args, context, info) => {
-			return menus.find((menu) => menu.name === args.name);
+		menus: (root, args, context, info) => {
+			if (args.name) {
+				return menus.filter((menu) => {
+					return args.name.includes(menu.name);
+				});
+			}
+			return menus;
 		},
 		button: (root, args, context, info) => {
 			return buttons.find((btn) => btn.name === args.name);

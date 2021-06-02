@@ -6,20 +6,22 @@ import Img from "../../ui/image/Img";
 import Button from "../../ui/button/Button";
 import Menu from "../../ui/menu/Menu";
 
+import { getElementFromQuery } from "../../../helpers";
+
 const query = gql(`
 query mainMenuContent {
-	logo(name: "mainLogo") {
+	logos {
 		name
 		url
 	}
-	menu(name: "mainMenu") {
+	menus {
 		name
 		links {
 			url
 			label
 		}
 	}
-	button(name: "invite") {
+	buttons {
 		name
 		label
 	}
@@ -30,7 +32,12 @@ const MenuBar = ({ stylesClass }) => {
 	const { loading, data } = useQuery(query);
 
 	if (!loading) {
-		const { logo, menu, button } = data;
+		const { logos, menus, buttons } = data;
+
+		const logo = getElementFromQuery(logos, "mainLogo");
+		const menu = getElementFromQuery(menus, "mainMenu");
+		const button = getElementFromQuery(buttons, "story");
+
 		return (
 			<div className={`main-menu-bar ${stylesClass}`}>
 				<Img url={`${logo.url}`} stylesClass="main-menu-bar-logo" />

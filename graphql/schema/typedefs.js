@@ -44,8 +44,8 @@ const schema = gql`
 	}
 
 	type Query {
-		logo(name: String!): Logo
-		menu(name: String!): Menu
+		logos(name: String): [Logo]
+		menus(name: String): [Menu]
 		button(name: String!): Button
 		buttons(name: String): [Button]
 		icon(name: String!): Icon
