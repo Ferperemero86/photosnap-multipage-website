@@ -1,6 +1,6 @@
 const data = require("../data");
 
-const { logos, menus, buttons, icons, groupCards } = data;
+const { logos, menus, buttons, icons, groupCards, copyRight } = data;
 
 const resolvers = {
 	Query: {
@@ -33,6 +33,10 @@ const resolvers = {
 		},
 		icon: (root, args, context, info) => {
 			return icons.find((icon) => icon.name === args.name);
+		},
+		copyRight: (root, args, context, info) => {
+			console.log(copyRight);
+			return copyRight;
 		},
 		groupCards: (root, args, context, info) => {
 			if (args.category) {

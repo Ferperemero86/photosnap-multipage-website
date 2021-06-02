@@ -43,12 +43,17 @@ const schema = gql`
 		cards(limit: Int): [Card!]!
 	}
 
+	type CopyRight {
+		text: String!
+	}
+
 	type Query {
 		logos(name: String): [Logo]
 		menus(name: String): [Menu]
 		button(name: String!): Button
 		buttons(name: String): [Button]
 		icon(name: String!): Icon
+		copyRight: CopyRight
 		groupCards(category: String): [GroupCard]
 	}
 `;

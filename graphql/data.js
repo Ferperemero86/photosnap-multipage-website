@@ -554,7 +554,10 @@ const data = {
 				}
 			]
 		}
-	]
+	],
+	copyRight: {
+		text: "Copyright 2019. All Rights Reserved"
+	}
 };
 
 module.exports = data;
