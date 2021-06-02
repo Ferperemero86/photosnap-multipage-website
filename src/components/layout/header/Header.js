@@ -4,7 +4,7 @@ import Card from "../../ui/card/Card";
 import Img from "../../ui/image/Img";
 
 const HeaderBackground = ({ backgroundImages }) => {
-	if (!backgroundImages) {
+	if (backgroundImages.length < 1) {
 		return null;
 	}
 
@@ -23,12 +23,12 @@ const Header = ({
 	hType,
 	cardClass
 }) => {
-	const { heading, text, images } = cardContent;
+	const { heading, text, images, backgroundImages } = cardContent;
 
 	return (
 		<div className={`${stylesClass}`}>
 			<div className={`${stylesClass}-background img-responsive`}>
-				<HeaderBackground backgroundImages="" />
+				<HeaderBackground backgroundImages={backgroundImages} />
 			</div>
 			<div className={`${stylesClass}-content`}>
 				<Card

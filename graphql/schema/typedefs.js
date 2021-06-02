@@ -36,6 +36,7 @@ const schema = gql`
 		heading: String
 		text: String
 		images: [Image]!
+		backgroundImages: [Image]
 	}
 
 	type GroupCard {

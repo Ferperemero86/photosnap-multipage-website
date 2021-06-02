@@ -24,6 +24,10 @@ const query = gql(`
 			cards {
 				heading
 				text
+				backgroundImages {
+					size
+					url
+				}
 				images {
 					size
 					url
