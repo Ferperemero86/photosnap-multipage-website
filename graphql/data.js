@@ -136,6 +136,30 @@ const data = {
 			]
 		},
 		{
+			name: "headerFour",
+			cards: [
+				{
+					backgroundImages: [],
+					images: [
+						{
+							size: "sm",
+							url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241075/photosnap/pricing/mobile/ciofvg3f4gxxz6hpqqru.jpg"
+						},
+						{
+							size: "md",
+							url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241078/photosnap/pricing/tablet/fqr9tkcazjga7ewyyky2.jpg"
+						},
+						{
+							size: "lg",
+							url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241077/photosnap/pricing/desktop/lkk6xslpsd8gtjrgijsh.jpg"
+						}
+					],
+					heading: "PRICING.",
+					text: "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos."
+				}
+			]
+		},
+		{
 			name: "group1",
 			cards: [
 				{
@@ -555,6 +579,26 @@ const data = {
 					]
 				}
 			]
+		}
+	],
+	pricePanels: [
+		{
+			name: "basic",
+			heading: "Basic",
+			bodyText:
+				"Includes basic usage of our platform. Recommended for new and aspiring photographers."
+		},
+		{
+			name: "pro",
+			heading: "Pro",
+			bodyText:
+				"More advanced features available. Recommended for photography veterans and professionals."
+		},
+		{
+			name: "business",
+			heading: "Business",
+			bodyText:
+				"Additional features available such as more detailed metrics. Recommended for business owners."
 		}
 	],
 	copyRight: {
