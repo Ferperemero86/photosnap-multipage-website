@@ -60,21 +60,23 @@ const Home = () => {
 					cardClass="card-primary"
 					hType="h2"
 				/>
-				<SectionOne
-					cardsContent={group1Cards}
-					button={cardButton}
-					icon={icon}
-				/>
-				<SectionTwo
-					cardsContent={group2Cards}
-					button={cardButton}
-					icon={icon}
-				/>
-				<SectionThree
-					cardsContent={group3Cards}
-					button={cardButton}
-					icon={icon}
-				/>
+				<main>
+					<SectionOne
+						cardsContent={group1Cards}
+						button={cardButton}
+						icon={icon}
+					/>
+					<SectionTwo
+						cardsContent={group2Cards}
+						button={cardButton}
+						icon={icon}
+					/>
+					<SectionThree
+						cardsContent={group3Cards}
+						button={cardButton}
+						icon={icon}
+					/>
+				</main>
 			</Layout>
 		);
 	}

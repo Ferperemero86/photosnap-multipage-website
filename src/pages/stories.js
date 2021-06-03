@@ -3,9 +3,9 @@ import { useQuery, gql } from "@apollo/client";
 
 import Layout from "../components/layout/Layout";
 import Header from "../components/layout/header/Header";
-// import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
+import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
 
-import { getCardsFromQuery, getElementFromQuery } from "../helpers";
+import { getCardsFromQuery } from "../helpers";
 
 const query = gql(`
 	query getStoriesContent {
@@ -17,7 +17,7 @@ const query = gql(`
 			name
 			url
 		}
-		groupCards(category: "headerSecond group4") {
+		groupCards(category: "headerSecond group2") {
 			name
 			cards {
 				heading
@@ -40,8 +40,9 @@ const Stories = () => {
 
 	if (!loading) {
 		const { groupCards, button, icon } = data;
-		console.log(data);
+
 		const headerSecondCard = getCardsFromQuery(groupCards, "headerSecond");
+		const group2Cards = getCardsFromQuery(groupCards, "group2");
 
 		return (
 			<Layout>
@@ -53,22 +54,14 @@ const Stories = () => {
 					cardClass="card-primary"
 					hType="h2"
 				/>
+				<main>
+					<SectionTwo cardsContent={group2Cards} button={button} icon={icon} />
+				</main>
 			</Layout>
 		);
 	}
 
 	return null;
-	// const query = useStaticQuery(graphql``);
-	// const cardContent = query.dataJson.cards.headerSecond;
-	// const group4Content = query.dataJson.cards.group4;
-	// return (
-	// <Layout>
-
-	// <main>
-	// <SectionTwo cardsContent={group4Content} />
-	// </main>
-	// </Layout>
-	// );
 };
 
 export default Stories;

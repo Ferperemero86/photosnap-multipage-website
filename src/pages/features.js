@@ -1,33 +1,80 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { useQuery, gql } from "@apollo/client";
 
 import Layout from "../components/layout/Layout";
 import Header from "../components/layout/header/Header";
 import SectionThree from "../components/layout/sections/section-three/SectionThree";
 import SectionFour from "../components/layout/sections/section-four/SectionFour";
 
+import { getCardsFromQuery, getElementFromQuery } from "../helpers";
+
+const query = gql(`
+	query getHomeContent {
+		button(name: "invite") {
+			name
+			label
+		}
+		icon(name:"arrowIconFirst") {
+			name
+			url
+		}
+		groupCards(category: "headerThird group3 group4") {
+			name
+			cards {
+				heading
+				text
+				backgroundImages {
+					size
+					url
+				}
+				images {
+					size
+					url
+				}
+			}
+		}
+	}
+`);
+
 const Features = () => {
-	// const query = useStaticQuery(graphql``);
+	const { loading, data } = useQuery(query);
 
-	// const cardContent = query.dataJson.cards.headerThird;
-	// const group3Content = query.dataJson.cards.group3;
-	// const group5Content = query.dataJson.cards.group5;
+	if (!loading) {
+		const { groupCards, button, icon } = data;
 
-	return (
-		<h1>Features</h1>
-		// <Layout>
-		// <Header
-		/// stylesClass="header-primary"
-		// cardContent={cardContent}
-		// cardClass="card-primary"
-		// hType="h2"
-		/// >
-		// <main>
-		// <SectionThree cardsContent={group3Content} />
-		// <SectionFour cardsContent={group5Content} />
-		// </main>
-		// </Layout>
-	);
+		const headerThirdCard = getCardsFromQuery(groupCards, "headerThird");
+		const group3Cards = getCardsFromQuery(groupCards, "group3");
+		const group4Cards = getCardsFromQuery(groupCards, "group4");
+
+		return (
+			<Layout>
+				<Header
+					stylesClass="header-primary"
+					cardContent={headerThirdCard}
+					cardClass="card-primary"
+					hType="h2"
+				/>
+				<main>
+					<SectionThree
+						cardsContent={group3Cards}
+						button={button}
+						icon={icon}
+					/>
+					<SectionFour
+						cardsContent={group4Cards}
+						buttonLabel={button.label}
+						iconUrl={icon.url}
+					/>
+				</main>
+			</Layout>
+		);
+	}
+
+	return null;
 };
+
+/* 
+
+*/
 
 export default Features;

@@ -24,6 +24,8 @@ const Header = ({
 	cardClass
 }) => {
 	const { heading, text, images, backgroundImages } = cardContent;
+	const buttonLabel = button ? button.label : "";
+	const iconUrl = icon ? icon.url : "";
 
 	return (
 		<div className={`${stylesClass}`}>
@@ -36,8 +38,8 @@ const Header = ({
 					hText={heading}
 					pText={text}
 					cardImages={images}
-					btnLabel={button.label}
-					icon={icon.url}
+					btnLabel={buttonLabel}
+					icon={iconUrl}
 					stylesClass={cardClass}
 					imgRight="img-right"
 				/>
