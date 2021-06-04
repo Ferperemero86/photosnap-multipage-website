@@ -10,6 +10,11 @@
 		@include font-weight('md', $font-weights);
 	}
 
+	&-text {
+
+		height: 5rem;
+	}
+
 	&-price {
 
 		margin-top: 1.5rem;
