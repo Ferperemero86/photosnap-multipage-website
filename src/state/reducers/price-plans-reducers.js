@@ -8,9 +8,9 @@ const pricePlansReducer = (state = store, action) => {
 			return Object.assign({}, state, action.payload);
 		case "SET_BUSINESS_PLAN":
 			return Object.assign({}, state, action.payload);
+		default:
+			return state;
 	}
-
-	return state;
 };
 
 export default pricePlansReducer;

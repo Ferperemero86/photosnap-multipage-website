@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import Panel from "../panel/Panel";
 
@@ -9,9 +9,10 @@ import {
 	setBusinessPlan
 } from "../../../state/actions/price-plans-actions";
 
-const Panels = ({ planPrices, stylesClass }) => {
-	console.log("PLANPRICES", planPrices);
+const Panels = ({ planPrices, planButton }) => {
 	const dispatch = useDispatch();
+	const state = useSelector((state) => state);
+	console.log(state);
 
 	return planPrices.map((plan, idx) => {
 		const planPrice =
@@ -25,19 +26,25 @@ const Panels = ({ planPrices, stylesClass }) => {
 
 		return (
 			<Panel
-				stylesClass={stylesClass}
+				stylesClass="price-panels-panel"
 				heading={plan.heading}
 				bodyText={plan.bodyText}
+				price={plan.price}
 				dispatch={setPrice}
+				button={planButton}
 				key={idx}
 			/>
 		);
 	});
 };
 
-const PricePanels = ({ planPrices, stylesClass }) => (
+const PricePanels = ({ planPrices, stylesClass, planButton }) => (
 	<div className={`price-panels ${stylesClass}`}>
-		<Panels planPrices={planPrices} stylesClass="price-panels-panel" />
+		<Panels
+			planPrices={planPrices}
+			stylesClass="price-panels-panel"
+			planButton={planButton}
+		/>
 	</div>
 );
 

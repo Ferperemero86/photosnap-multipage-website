@@ -7,15 +7,20 @@
 	&-heading {
 
 		margin-bottom: 1rem;
+		@include font-weight('md', $font-weights);
+	}
+
+	&-price {
+
+		margin-top: 1.5rem;
+		@include font-size('lg', $par-sizes);
+		@include font-weight('md', $font-weights);
 	}
 
 	&-button {
 
 		width: 100%;
 		margin-top: 2rem;
-		padding: 1rem 0rem;
-		@include bg-color("primary");
-		@include color("third");
 	}
 }
 

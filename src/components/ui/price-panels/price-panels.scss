@@ -3,9 +3,49 @@
 
 	&-panel {
 
+		&:hover {
+
+			@include bg-color('primary');
+			@include color('third');
+			@include transition('background-color', 0.5s);
+			@include transition('color', 0.5s);
+		}
+
 		&:not(:first-child) {
 
-			margin-top: 1rem;
+			@include breakpoint-down('lg') {
+				margin-top: 3rem;
+			}
+		}
+
+		.panel-button {
+
+			padding: 1rem 0rem;
+			@include bg-color('primary');
+			@include color('third');
+
+			&:hover {
+
+				opacity: 0.5;
+				@include transition('opacity', 0.5s);
+			}
+		}
+
+		@include breakpoint-up('md') {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include breakpoint-up('lg') {
+			display: block;
 		}
 	}
+
+
+	@include breakpoint-up('lg') {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 2rem;
+	}
 }
+

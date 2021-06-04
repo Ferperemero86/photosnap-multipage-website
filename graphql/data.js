@@ -589,18 +589,21 @@ const data = {
 		{
 			name: "basic",
 			heading: "Basic",
+			price: "$19.00",
 			bodyText:
 				"Includes basic usage of our platform. Recommended for new and aspiring photographers."
 		},
 		{
 			name: "pro",
 			heading: "Pro",
+			price: "$39.00",
 			bodyText:
 				"More advanced features available. Recommended for photography veterans and professionals."
 		},
 		{
 			name: "business",
 			heading: "Business",
+			price: "$99.00",
 			bodyText:
 				"Additional features available such as more detailed metrics. Recommended for business owners."
 		}

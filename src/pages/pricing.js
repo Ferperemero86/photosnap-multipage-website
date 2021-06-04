@@ -37,6 +37,7 @@ const query = gql(`
 		}
 		planPrices {
 			name
+			price
 			heading
 			bodyText
 		}
@@ -54,7 +55,7 @@ const Home = () => {
 		// const group2Cards = getCardsFromQuery(groupCards, "group2", 4);
 		// const group3Cards = getCardsFromQuery(groupCards, "group3", 3);
 		const planButton = getElementFromQuery(buttons, "plan");
-
+		console.log(planButton);
 		return (
 			<Layout>
 				<Header
@@ -64,7 +65,7 @@ const Home = () => {
 					hType="h2"
 				/>
 				<main>
-					<SectionFive planPrices={planPrices} />
+					<SectionFive planPrices={planPrices} planButton={planButton} />
 				</main>
 			</Layout>
 		);

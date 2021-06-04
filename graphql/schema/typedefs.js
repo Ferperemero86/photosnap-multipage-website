@@ -50,6 +50,7 @@ const schema = gql`
 
 	type PlanPrice {
 		name: String
+		price: String
 		heading: String
 		bodyText: String
 	}
