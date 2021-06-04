@@ -7,7 +7,6 @@ import ReduxWrapper from "./src/state/ReduxWrapper";
 
 export const wrapRootElement = ({ element }) => (
 	<ApolloProvider client={client}>
-		<ReduxWrapper />
-		{element}
+		<ReduxWrapper element={element} />
 	</ApolloProvider>
 );

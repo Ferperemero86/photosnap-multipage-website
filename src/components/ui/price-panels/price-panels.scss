@@ -1,0 +1,11 @@
+.price-panels {
+	@include padding-y(4rem);
+
+	&-panel {
+
+		&:not(:first-child) {
+
+			margin-top: 1rem;
+		}
+	}
+}

@@ -1,14 +1,12 @@
-const initialState = { mobileMenuDisplay: false };
+import store from "../store";
 
-const DisplayReducer = (state = initialState, action) => {
+const displayReducer = (state = store, action) => {
 	switch (action.type) {
 		case "SHOW_MOBILE_MENU":
-			return { ...state, mobileMenuDisplay: true };
-		case "HIDE_MOBILE_MENU":
-			return { ...state, mobileMenuDisplay: false };
-		default:
-			return state;
+			return { ...state, test: action.payload };
 	}
+
+	return state;
 };
 
-export default DisplayReducer;
+export default displayReducer;

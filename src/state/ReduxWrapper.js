@@ -2,10 +2,16 @@ import React from "react";
 
 import { Provider } from "react-redux";
 
-import store from "./store";
+import { createStore as reduxCreateStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+
+import rootReducer from "./reducers";
+
+const storeData = (store) =>
+	reduxCreateStore(rootReducer, applyMiddleware(thunk));
 
 const ReduxWrapper = ({ element }) => (
-	<Provider store={store()}>{element}</Provider>
+	<Provider store={storeData()}>{element}</Provider>
 );
 
 export default ReduxWrapper;

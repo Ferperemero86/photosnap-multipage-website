@@ -1,6 +1,7 @@
 const data = require("../data");
 
-const { logos, menus, buttons, icons, groupCards, copyRight } = data;
+const { logos, menus, buttons, icons, groupCards, planPrices, copyRight } =
+	data;
 
 const resolvers = {
 	Query: {
@@ -46,6 +47,15 @@ const resolvers = {
 			}
 
 			return groupCards;
+		},
+		planPrices: (root, args, context, info) => {
+			if (args.name) {
+				return planPrices.filter((group) => {
+					return args.name.includes(group.name);
+				});
+			}
+
+			return planPrices;
 		}
 	}
 };

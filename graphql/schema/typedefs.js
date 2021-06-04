@@ -48,6 +48,12 @@ const schema = gql`
 		text: String!
 	}
 
+	type PlanPrice {
+		name: String
+		heading: String
+		bodyText: String
+	}
+
 	type Query {
 		logos(name: String): [Logo]
 		menus(name: String): [Menu]
@@ -56,6 +62,7 @@ const schema = gql`
 		icon(name: String!): Icon
 		copyRight: CopyRight
 		groupCards(category: String): [GroupCard]
+		planPrices(name: String): [PlanPrice]
 	}
 `;
 

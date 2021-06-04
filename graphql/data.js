@@ -59,6 +59,10 @@ const data = {
 		{
 			name: "story",
 			label: "READ STORY"
+		},
+		{
+			name: "plan",
+			label: "PICK A PLAN"
 		}
 	],
 	groupCards: [
@@ -581,7 +585,7 @@ const data = {
 			]
 		}
 	],
-	pricePanels: [
+	planPrices: [
 		{
 			name: "basic",
 			heading: "Basic",

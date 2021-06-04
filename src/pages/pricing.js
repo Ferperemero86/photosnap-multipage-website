@@ -3,7 +3,8 @@ import { useQuery, gql } from "@apollo/client";
 
 import Layout from "../components/layout/Layout";
 import Header from "../components/layout/header/Header";
-// import SectionOne from "../components/layout/sections/section-one/SectionOne";
+import SectionFive from "../components/layout/sections/section-five/SectionFive";
+
 // import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
 // import SectionThree from "../components/layout/sections/section-three/SectionThree";
 
@@ -34,6 +35,11 @@ const query = gql(`
 				}
 			}
 		}
+		planPrices {
+			name
+			heading
+			bodyText
+		}
 	}
 `);
 
@@ -41,13 +47,13 @@ const Home = () => {
 	const { loading, data } = useQuery(query);
 
 	if (!loading) {
-		const { groupCards, buttons, icon } = data;
+		const { groupCards, buttons, icon, planPrices } = data;
 		console.log("DATA", data);
 		const headerFourCard = getCardsFromQuery(groupCards, "headerFour");
 		// const group1Cards = getCardsFromQuery(groupCards, "group1");
 		// const group2Cards = getCardsFromQuery(groupCards, "group2", 4);
 		// const group3Cards = getCardsFromQuery(groupCards, "group3", 3);
-		// const cardButton = getElementFromQuery(buttons, "story");
+		const planButton = getElementFromQuery(buttons, "plan");
 
 		return (
 			<Layout>
@@ -57,7 +63,9 @@ const Home = () => {
 					cardClass="card-primary"
 					hType="h2"
 				/>
-				<main></main>
+				<main>
+					<SectionFive planPrices={planPrices} />
+				</main>
 			</Layout>
 		);
 	}

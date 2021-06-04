@@ -1,8 +1,8 @@
-import { createStore as reduxCreateStore, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
-
-import rootReducer from "./reducers";
-
-const store = () => reduxCreateStore(rootReducer, applyMiddleware(thunk));
+const store = {
+	plan: {
+		period: "monthly",
+		price: "$19.00"
+	}
+};
 
 export default store;
