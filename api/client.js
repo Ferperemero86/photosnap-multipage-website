@@ -3,6 +3,6 @@ import fetch from "isomorphic-fetch";
 
 export const client = new ApolloClient({
 	fetch,
-	uri: "http://localhost:9000/graphql",
+	uri: "http://localhost:9000/api/graphql",
 	cache: new InMemoryCache()
 });
