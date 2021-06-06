@@ -8,7 +8,7 @@ const typeDefs = require("./schema/typedefs");
 const resolvers = require("./schema/resolvers");
 
 const server = new ApolloServer({ typeDefs, resolvers });
-console.log("ENV VAR", process.env.API_PORT);
+console.log("ENV VAR", process.env.GATSBY_API_PORT);
 server
-	.listen({ port: process.env.API_PORT })
+	.listen({ port: process.env.GATSBY_API_PORT })
 	.then(({ url }) => console.log(`Server running at ${url}`));
