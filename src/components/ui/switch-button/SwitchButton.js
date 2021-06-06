@@ -1,8 +1,8 @@
 import React from "react";
 
-const SwitchButton = () => (
+const SwitchButton = ({ stylesClass, dispatch }) => (
 	<div>
-		<label className="switch">
+		<label className={`switch ${stylesClass}-switch`} onChange={dispatch}>
 			<input type="checkbox"></input>
 			<span className="slider round"></span>
 		</label>

@@ -48,14 +48,10 @@ const Home = () => {
 	const { loading, data } = useQuery(query);
 
 	if (!loading) {
-		const { groupCards, buttons, icon, planPrices } = data;
-		console.log("DATA", data);
+		const { groupCards, buttons, planPrices } = data;
 		const headerFourCard = getCardsFromQuery(groupCards, "headerFour");
-		// const group1Cards = getCardsFromQuery(groupCards, "group1");
-		// const group2Cards = getCardsFromQuery(groupCards, "group2", 4);
-		// const group3Cards = getCardsFromQuery(groupCards, "group3", 3);
 		const planButton = getElementFromQuery(buttons, "plan");
-		console.log(planButton);
+
 		return (
 			<Layout>
 				<Header
@@ -65,7 +61,7 @@ const Home = () => {
 					hType="h2"
 				/>
 				<main>
-					<SectionFive planPrices={planPrices} planButton={planButton} />
+					<SectionFive plans={planPrices} planButton={planButton} />
 				</main>
 			</Layout>
 		);

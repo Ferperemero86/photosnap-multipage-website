@@ -2,9 +2,9 @@ import React from "react";
 
 import PricePanels from "../../../ui/price-panels/PricePanels";
 
-const SectionFive = ({ planPrices, planButton }) => (
+const SectionFive = ({ plans, planButton }) => (
 	<div className="section-five container">
-		<PricePanels planPrices={planPrices} planButton={planButton} />
+		<PricePanels plans={plans} planButton={planButton} />
 	</div>
 );
 

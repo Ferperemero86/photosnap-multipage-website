@@ -20,7 +20,7 @@
 
 		.panel-button {
 
-			padding: 1rem 0rem;
+			padding: 1rem 0;
 			@include bg-color('primary');
 			@include color('third');
 
@@ -41,6 +41,17 @@
 		}
 	}
 
+	&-toggle {
+
+		display: flex;
+		justify-content: center;
+
+		.switch {
+			
+			margin: 0 2rem;
+		}
+	}
+	
 
 	@include breakpoint-up('lg') {
 		display: grid;
