@@ -1,7 +1,15 @@
 const data = require("../data");
 
-const { logos, menus, buttons, icons, groupCards, planPrices, copyRight } =
-	data;
+const {
+	logos,
+	menus,
+	buttons,
+	icons,
+	groupCards,
+	planPrices,
+	planComparison,
+	copyRight
+} = data;
 
 const resolvers = {
 	Query: {
@@ -56,6 +64,10 @@ const resolvers = {
 			}
 
 			return planPrices;
+		},
+		planComparison: (root, args, context, info) => {
+			console.log(planComparison);
+			return planComparison;
 		}
 	}
 };

@@ -608,6 +608,62 @@ const data = {
 				"Additional features available such as more detailed metrics. Recommended for business owners."
 		}
 	],
+	planComparison: [
+		{
+			title: "UNLIMITED STORY POSTING",
+			basic: true,
+			pro: true,
+			business: true
+		},
+		{
+			title: "UNLIMITED PHOTO UPLOAD",
+			basic: true,
+			pro: true,
+			business: true
+		},
+		{
+			title: "EMBEDDING CUSTOM CONTENT",
+			basic: true,
+			pro: true,
+			business: true
+		},
+		{
+			title: "CUSTOMIZE METADATA",
+			basic: true,
+			pro: true,
+			business: true
+		},
+		{
+			title: "ADVANCED METRICS",
+			basic: true,
+			pro: true,
+			business: true
+		},
+		{
+			title: "PHOTO DOWNLOADS",
+			basic: true,
+			pro: true,
+			business: true
+		},
+		{
+			title: "SEARCH ENGINE INDEXING",
+			basic: true,
+			pro: true,
+			business: true
+		},
+		{
+			title: "CUSTOM ANALYTICS",
+			basic: true,
+			pro: true,
+			business: true
+		},
+		{
+			title: "",
+			basic: true,
+			pro: true,
+			business: true
+		}
+	],
 	copyRight: {
 		text: "Copyright 2019. All Rights Reserved"
 	}

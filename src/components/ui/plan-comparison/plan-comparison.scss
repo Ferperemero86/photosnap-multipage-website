@@ -1,0 +1,15 @@
+.plan-comparison {
+    width: 100%;
+
+    &-heading {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    @include breakpoint-up('md') {
+        width: 50%;
+        margin: auto;
+    }
+}

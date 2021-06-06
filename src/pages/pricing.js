@@ -5,9 +5,6 @@ import Layout from "../components/layout/Layout";
 import Header from "../components/layout/header/Header";
 import SectionFive from "../components/layout/sections/section-five/SectionFive";
 
-// import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
-// import SectionThree from "../components/layout/sections/section-three/SectionThree";
-
 import { getCardsFromQuery, getElementFromQuery } from "../helpers";
 
 const query = gql(`
@@ -44,7 +41,7 @@ const query = gql(`
 	}
 `);
 
-const Home = () => {
+const Pricing = () => {
 	const { loading, data } = useQuery(query);
 
 	if (!loading) {
@@ -70,4 +67,4 @@ const Home = () => {
 	return null;
 };
 
-export default Home;
+export default Pricing;

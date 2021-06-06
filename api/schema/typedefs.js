@@ -55,6 +55,10 @@ const schema = gql`
 		bodyText: String
 	}
 
+	type PlanComparison {
+		title: String
+	}
+
 	type Query {
 		logos(name: String): [Logo]
 		menus(name: String): [Menu]
@@ -64,6 +68,7 @@ const schema = gql`
 		copyRight: CopyRight
 		groupCards(category: String): [GroupCard]
 		planPrices(name: String): [PlanPrice]
+		planComparison: [PlanComparison]
 	}
 `;
 
