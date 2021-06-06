@@ -1,5 +1,7 @@
+const enviroment =
+	process.env.NODE_ENV === "production" ? "production" : "development";
 require("dotenv").config({
-	path: `./.env`
+	path: `./.env.${enviroment}`
 });
 
 const { ApolloServer } = require("apollo-server");
