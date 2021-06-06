@@ -38,10 +38,10 @@ const data = {
 		{
 			name: "mainMenu",
 			links: [
-				{ url: "/", label: "home" },
-				{ url: "/stories", label: "stories" },
-				{ url: "/features", label: "features" },
-				{ url: "/pricing", label: "pricing" }
+				{ url: "/", label: "Home" },
+				{ url: "/stories", label: "Stories" },
+				{ url: "/features", label: "Features" },
+				{ url: "/pricing", label: "Pricing" }
 			]
 		}
 	],
