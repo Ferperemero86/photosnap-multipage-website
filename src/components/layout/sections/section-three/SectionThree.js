@@ -2,7 +2,7 @@ import React from "react";
 
 import Card from "../../../ui/card/Card";
 
-const Cards = ({ cardsContent, button, icon }) => {
+const Cards = ({ cardsContent }) => {
 	return cardsContent.map((content, idx) => {
 		const { heading, text, images } = content;
 
@@ -22,7 +22,7 @@ const Cards = ({ cardsContent, button, icon }) => {
 	});
 };
 
-const SectionThree = ({ cardsContent, button, icon }) => (
+const SectionThree = ({ cardsContent }) => (
 	<div className="section-three">
 		<Cards cardsContent={cardsContent} />
 	</div>
