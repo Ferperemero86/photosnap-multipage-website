@@ -1,68 +1,68 @@
 import React from "react";
-// import { useQuery, gql } from "@apollo/client";
-//
-// import Layout from "../components/layout/Layout";
-// import Header from "../components/layout/header/Header";
-// import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
-//
-// import { getCardsFromQuery } from "../helpers";
-//
-// const query = gql(`
-//	query getStoriesContent {
-//		button(name: "story") {
-//			name
-//			label
-//		}
-//		icon(name:"arrowIconFirst") {
-//			name
-//			url
-//		}
-//		groupCards(category: "headerSecond group2") {
-//			name
-//			cards {
-//				heading
-//				text
-//				backgroundImages {
-//					size
-//					url
-//				}
-//				images {
-//					size
-//					url
-//				}
-//			}
-//		}
-//	}
-// `);
-//
-const Stories = () => {
-	//	const { loading, data } = useQuery(query);
-	//
-	//	if (!loading) {
-	//		const { groupCards, button, icon } = data;
-	//
-	//		const headerSecondCard = getCardsFromQuery(groupCards, "headerSecond");
-	//		const group2Cards = getCardsFromQuery(groupCards, "group2");
-	//
-	//		return (
-	//			<Layout>
-	//				<Header
-	//					stylesClass="header-second"
-	//					cardContent={headerSecondCard}
-	//					button={button}
-	//					icon={icon}
-	//					cardClass="card-primary"
-	//					hType="h2"
-	//				/>
-	//				<main>
-	//					<SectionTwo cardsContent={group2Cards} button={button} icon={icon} />
-	//				</main>
-	//			</Layout>
-	//		);
-	//	}
-	//
-	return <h1>Stories</h1>;
+import { graphql } from "gatsby";
+
+import Layout from "../components/layout/Layout";
+import Header from "../components/layout/header/Header";
+import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
+
+import { getCardsFromQuery, getElementFromQuery } from "../helpers";
+
+const Stories = ({ data }) => {
+	const { groupCards, buttons, icons } = data.apiJson;
+	const headerSecondCard = getCardsFromQuery(groupCards, "headerSecond");
+	const group2Cards = getCardsFromQuery(groupCards, "group2");
+	const storyButton = getElementFromQuery(buttons, "story");
+	const arrowIconFirst = getElementFromQuery(icons, "arrowIconFirst");
+
+	return (
+		<Layout>
+			<Header
+				stylesClass="header-second"
+				cardContent={headerSecondCard}
+				button={storyButton}
+				icon={arrowIconFirst}
+				cardClass="card-primary"
+				hType="h2"
+			/>
+			<main>
+				<SectionTwo
+					cardsContent={group2Cards}
+					button={storyButton}
+					icon={arrowIconFirst}
+				/>
+			</main>
+		</Layout>
+	);
 };
-//
+
+export const query = graphql`
+	query getStoriesContent {
+		apiJson {
+			buttons {
+				name
+				label
+			}
+			icons {
+				name
+				url
+			}
+			groupCards {
+				name
+				cards {
+					heading
+					text
+					backgroundImages {
+						size
+						url
+					}
+					images {
+						size
+						url
+					}
+				}
+			}
+		}
+	}
+`;
+
 export default Stories;
-//
