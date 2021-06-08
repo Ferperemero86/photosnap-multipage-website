@@ -12,7 +12,7 @@ const BackgoundImage = ({ images }) => {
 	});
 };
 
-const SectionFour = ({ cardsContent, button, icon }) => {
+const SectionFour = ({ cardsContent, buttonLabel, iconUrl }) => {
 	const { images, heading } = cardsContent;
 
 	return (
@@ -27,8 +27,8 @@ const SectionFour = ({ cardsContent, button, icon }) => {
 					text={heading}
 				/>
 				<div>
-					<Button stylesClass="section-four-content-btn" label={button} />
-					<Img url={icon} stylesClass="section-four-content-icon" />
+					<Button stylesClass="section-four-content-btn" label={buttonLabel} />
+					<Img url={iconUrl} stylesClass="section-four-content-icon" />
 				</div>
 			</div>
 		</div>

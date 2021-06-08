@@ -1,81 +1,69 @@
 import React from "react";
-// import { useQuery, gql } from "@apollo/client";
-//
-// import Layout from "../components/layout/Layout";
-// import Header from "../components/layout/header/Header";
-// import SectionThree from "../components/layout/sections/section-three/SectionThree";
-// import SectionFour from "../components/layout/sections/section-four/SectionFour";
-//
-// import { getCardsFromQuery, getElementFromQuery } from "../helpers";
-//
-// const query = gql(`
-//	query getHomeContent {
-//		button(name: "invite") {
-//			name
-//			label
-//		}
-//		icon(name:"arrowIconFirst") {
-//			name
-//			url
-//		}
-//		groupCards(category: "headerThird group3 group4") {
-//			name
-//			cards {
-//				heading
-//				text
-//				backgroundImages {
-//					size
-//					url
-//				}
-//				images {
-//					size
-//					url
-//				}
-//			}
-//		}
-//	}
-// `);
-//
-const Features = () => {
-	//	const { loading, data } = useQuery(query);
-	//
-	//	if (!loading) {
-	//		const { groupCards, button, icon } = data;
-	//
-	//		const headerThirdCard = getCardsFromQuery(groupCards, "headerThird");
-	//		const group3Cards = getCardsFromQuery(groupCards, "group3");
-	//		const group4Cards = getCardsFromQuery(groupCards, "group4");
-	//
-	//		return (
-	//			<Layout>
-	//				<Header
-	//					stylesClass="header-primary"
-	//					cardContent={headerThirdCard}
-	//					cardClass="card-primary"
-	//					hType="h2"
-	//				/>
-	//				<main>
-	//					<SectionThree
-	//						cardsContent={group3Cards}
-	//						button={button}
-	//						icon={icon}
-	//					/>
-	//					<SectionFour
-	//						cardsContent={group4Cards}
-	//						buttonLabel={button.label}
-	//						iconUrl={icon.url}
-	//					/>
-	//				</main>
-	//			</Layout>
-	//		);
-	//	}
-	//
-	return <h1>Features</h1>;
+import { graphql } from "gatsby";
+
+import Layout from "../components/layout/Layout";
+import Header from "../components/layout/header/Header";
+import SectionThree from "../components/layout/sections/section-three/SectionThree";
+import SectionFour from "../components/layout/sections/section-four/SectionFour";
+
+import { getCardsFromQuery, getElementFromQuery } from "../helpers";
+
+const Features = ({ data }) => {
+	const { groupCards, buttons, icons } = data.apiJson;
+	const headerThirdCard = getCardsFromQuery(groupCards, "headerThird");
+	const group3Cards = getCardsFromQuery(groupCards, "group3");
+	const group4Cards = getCardsFromQuery(groupCards, "group4");
+	const buttonInvite = getElementFromQuery(buttons, "invite");
+	const arrowIconFirst = getElementFromQuery(icons, "arrowIconFirst");
+
+	return (
+		<Layout>
+			<Header
+				stylesClass="header-primary"
+				cardContent={headerThirdCard}
+				cardClass="card-primary"
+				hType="h2"
+			/>
+			<main>
+				<SectionThree cardsContent={group3Cards} />
+				<SectionFour
+					cardsContent={group4Cards}
+					buttonLabel={buttonInvite.label}
+					iconUrl={arrowIconFirst.url}
+				/>
+			</main>
+		</Layout>
+	);
 };
-//
-/// *
-//
-//* /
-//
+
+export const query = graphql`
+	query getFeaturesContent {
+		apiJson {
+			buttons {
+				name
+				label
+			}
+			icons {
+				name
+				url
+			}
+			groupCards {
+				name
+				cards {
+					heading
+					text
+					backgroundImages {
+						size
+						url
+					}
+					images {
+						size
+						url
+					}
+				}
+			}
+		}
+	}
+`;
+
 export default Features;
-//
