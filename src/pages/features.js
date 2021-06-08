@@ -24,14 +24,12 @@ const Features = ({ data }) => {
 				cardClass="card-primary"
 				hType="h2"
 			/>
-			<main>
-				<SectionThree cardsContent={group3Cards} />
-				<SectionFour
-					cardsContent={group4Cards}
-					buttonLabel={buttonInvite.label}
-					iconUrl={arrowIconFirst.url}
-				/>
-			</main>
+			<SectionThree cardsContent={group3Cards} />
+			<SectionFour
+				cardsContent={group4Cards}
+				buttonLabel={buttonInvite.label}
+				iconUrl={arrowIconFirst.url}
+			/>
 		</Layout>
 	);
 };

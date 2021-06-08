@@ -1,15 +1,38 @@
 .plan-comparison {
     width: 100%;
+    @include padding-y(3rem);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
-    &-heading {
+    &:not(:first-child) {
 
-        display: flex;
-        justify-content: space-between;
+        justify-items: center;
+    }
+
+    &-fields {
+        display: grid;
+        grid-template-rows: repeat(9, 4rem);
+
+        .heading {
+            @include font-size('xxsm', $heading-sizes);
+        }
+
+        .features-field p {
+
+            //margin-top: 1em;
+            @include font-size('sm', $par-sizes);
+        }
+
+        .field {
+
+            //margin-top: 1.5rem;
+            text-align: center;
+        }
     }
 
 
     @include breakpoint-up('md') {
-        width: 50%;
         margin: auto;
     }
 }
+

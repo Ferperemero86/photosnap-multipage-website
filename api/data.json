@@ -57,6 +57,10 @@
 		{
 			"name": "hamburger",
 			"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241090/photosnap/shared/mobile/upsvqukofxwa49npe5jt.svg"
+		},
+		{
+			"name": "thick",
+			"url": "https://res.cloudinary.com/dby4kdmbv/image/upload/v1621241073/photosnap/pricing/desktop/u8xyz2vp2ubvnn4wweqg.svg"
 		}
 	],
 	"buttons": [
@@ -597,21 +601,30 @@
 		{
 			"name": "basic",
 			"heading": "Basic",
-			"price": "$19.00",
+			"price":{
+				"monthly": "$19.00",
+				"yearly": "$190.00"
+			}, 
 			"bodyText":
 				"Includes basic usage of our platform. Recommended for new and aspiring photographers."
 		},
 		{
 			"name": "pro",
 			"heading": "Pro",
-			"price": "$39.00",
+			"price":{
+				"monthly": "$39.00",
+				"yearly": "$390.00"
+			},
 			"bodyText":
 				"More advanced features available. Recommended for photography veterans and professionals."
 		},
 		{
 			"name": "business",
 			"heading": "Business",
-			"price": "$99.00",
+			"price":{
+				"monthly": "$99.00",
+				"yearly": "$990.00"
+			},
 			"bodyText":
 				"Additional features available such as more detailed metrics. Recommended for business owners."
 		}
@@ -631,44 +644,38 @@
 		},
 		{
 			"title": "EMBEDDING CUSTOM CONTENT",
-			"basic": true,
+			"basic": false,
 			"pro": true,
 			"business": true
 		},
 		{
 			"title": "CUSTOMIZE METADATA",
-			"basic": true,
+			"basic": false,
 			"pro": true,
 			"business": true
 		},
 		{
 			"title": "ADVANCED METRICS",
-			"basic": true,
-			"pro": true,
+			"basic": false,
+			"pro": false,
 			"business": true
 		},
 		{
 			"title": "PHOTO DOWNLOADS",
-			"basic": true,
-			"pro": true,
+			"basic": false,
+			"pro": false,
 			"business": true
 		},
 		{
 			"title": "SEARCH ENGINE INDEXING",
-			"basic": true,
-			"pro": true,
+			"basic": false,
+			"pro": false,
 			"business": true
 		},
 		{
 			"title": "CUSTOM ANALYTICS",
-			"basic": true,
-			"pro": true,
-			"business": true
-		},
-		{
-			"title": "",
-			"basic": true,
-			"pro": true,
+			"basic": false,
+			"pro": false,
 			"business": true
 		}
 	],

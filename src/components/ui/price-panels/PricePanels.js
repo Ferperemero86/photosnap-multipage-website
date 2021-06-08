@@ -15,7 +15,7 @@ const Panels = ({ plans, planButton }) => {
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state);
 
-	const { planSelected, planPrices } = state.pricePlansReducer;
+	const { planSelected } = state.pricePlansReducer;
 
 	return plans.map((plan, idx) => {
 		const planPriceSelected =
@@ -25,16 +25,10 @@ const Panels = ({ plans, planButton }) => {
 				? setProPlan
 				: setBusinessPlan;
 
-		let planPrice = "";
-
-		const planPeriod =
+		const planPrice =
 			planSelected.period === "monthly"
-				? planPrices.monthly
-				: planPrices.yearly;
-
-		const planEl = planPeriod.find((item) => plan.name === item.name);
-
-		planPrice = planEl.price;
+				? plan.price.monthly
+				: plan.price.yearly;
 
 		const setPrice = () => dispatch(planPriceSelected());
 

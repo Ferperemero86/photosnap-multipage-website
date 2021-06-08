@@ -24,13 +24,11 @@ const Stories = ({ data }) => {
 				cardClass="card-primary"
 				hType="h2"
 			/>
-			<main>
-				<SectionTwo
-					cardsContent={group2Cards}
-					button={storyButton}
-					icon={arrowIconFirst}
-				/>
-			</main>
+			<SectionTwo
+				cardsContent={group2Cards}
+				button={storyButton}
+				icon={arrowIconFirst}
+			/>
 		</Layout>
 	);
 };
