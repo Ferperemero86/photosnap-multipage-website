@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 // import { useQuery, gql } from "@apollo/client";
 //
 // import Layout from "../components/layout/Layout";
@@ -36,46 +36,46 @@
 //	}
 // `);
 //
-// const Features = () => {
-//	const { loading, data } = useQuery(query);
-//
-//	if (!loading) {
-//		const { groupCards, button, icon } = data;
-//
-//		const headerThirdCard = getCardsFromQuery(groupCards, "headerThird");
-//		const group3Cards = getCardsFromQuery(groupCards, "group3");
-//		const group4Cards = getCardsFromQuery(groupCards, "group4");
-//
-//		return (
-//			<Layout>
-//				<Header
-//					stylesClass="header-primary"
-//					cardContent={headerThirdCard}
-//					cardClass="card-primary"
-//					hType="h2"
-//				/>
-//				<main>
-//					<SectionThree
-//						cardsContent={group3Cards}
-//						button={button}
-//						icon={icon}
-//					/>
-//					<SectionFour
-//						cardsContent={group4Cards}
-//						buttonLabel={button.label}
-//						iconUrl={icon.url}
-//					/>
-//				</main>
-//			</Layout>
-//		);
-//	}
-//
-//	return null;
-// };
+const Features = () => {
+	//	const { loading, data } = useQuery(query);
+	//
+	//	if (!loading) {
+	//		const { groupCards, button, icon } = data;
+	//
+	//		const headerThirdCard = getCardsFromQuery(groupCards, "headerThird");
+	//		const group3Cards = getCardsFromQuery(groupCards, "group3");
+	//		const group4Cards = getCardsFromQuery(groupCards, "group4");
+	//
+	//		return (
+	//			<Layout>
+	//				<Header
+	//					stylesClass="header-primary"
+	//					cardContent={headerThirdCard}
+	//					cardClass="card-primary"
+	//					hType="h2"
+	//				/>
+	//				<main>
+	//					<SectionThree
+	//						cardsContent={group3Cards}
+	//						button={button}
+	//						icon={icon}
+	//					/>
+	//					<SectionFour
+	//						cardsContent={group4Cards}
+	//						buttonLabel={button.label}
+	//						iconUrl={icon.url}
+	//					/>
+	//				</main>
+	//			</Layout>
+	//		);
+	//	}
+	//
+	return <h1>Features</h1>;
+};
 //
 /// *
 //
 //* /
 //
-// export default Features;
+export default Features;
 //

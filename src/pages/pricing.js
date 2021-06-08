@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 // import { useQuery, gql } from "@apollo/client";
 //
 // import Layout from "../components/layout/Layout";
@@ -41,31 +41,31 @@
 //	}
 // `);
 //
-// const Pricing = () => {
-//	const { loading, data } = useQuery(query);
+const Pricing = () => {
+	//	const { loading, data } = useQuery(query);
+	//
+	//	if (!loading) {
+	//		const { groupCards, buttons, planPrices } = data;
+	//		const headerFourCard = getCardsFromQuery(groupCards, "headerFour");
+	//		const planButton = getElementFromQuery(buttons, "plan");
+	//
+	//		return (
+	//			<Layout>
+	//				<Header
+	//					stylesClass="header-primary"
+	//					cardContent={headerFourCard}
+	//					cardClass="card-primary"
+	//					hType="h2"
+	//				/>
+	//				<main>
+	//					<SectionFive plans={planPrices} planButton={planButton} />
+	//				</main>
+	//			</Layout>
+	//		);
+	//	}
+	//
+	return <h1>Pricing</h1>;
+};
 //
-//	if (!loading) {
-//		const { groupCards, buttons, planPrices } = data;
-//		const headerFourCard = getCardsFromQuery(groupCards, "headerFour");
-//		const planButton = getElementFromQuery(buttons, "plan");
-//
-//		return (
-//			<Layout>
-//				<Header
-//					stylesClass="header-primary"
-//					cardContent={headerFourCard}
-//					cardClass="card-primary"
-//					hType="h2"
-//				/>
-//				<main>
-//					<SectionFive plans={planPrices} planButton={planButton} />
-//				</main>
-//			</Layout>
-//		);
-//	}
-//
-//	return null;
-// };
-//
-// export default Pricing;
+export default Pricing;
 //
