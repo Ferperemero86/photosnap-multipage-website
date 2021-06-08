@@ -60,11 +60,13 @@ const PricePanels = ({ plans, stylesClass, planButton }) => {
 				<SwitchButton stylesClass="price-panels" dispatch={changePeriod} />
 				<p>Yearly</p>
 			</div>
-			<Panels
-				plans={plans}
-				stylesClass="price-panels-panel"
-				planButton={planButton}
-			/>
+			<div className="price-panels-panels">
+				<Panels
+					plans={plans}
+					stylesClass="price-panels-panel"
+					planButton={planButton}
+				/>
+			</div>
 		</div>
 	);
 };

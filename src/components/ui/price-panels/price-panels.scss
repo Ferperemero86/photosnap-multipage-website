@@ -1,6 +1,16 @@
 .price-panels {
 	@include padding-y(4rem);
 
+	&-panels {
+		margin-top: 4rem;
+
+		@include breakpoint-up('lg') {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 2rem;
+		}
+	}
+
 	&-panel {
 
 		&:hover {
@@ -9,6 +19,14 @@
 			@include color('third');
 			@include transition('background-color', 0.5s);
 			@include transition('color', 0.5s);
+
+			.panel-button {
+
+				@include bg-color('third');
+				@include color('primary');
+				@include transition('background-color', 0.5s);
+				@include transition('color', 0.5s);
+			}
 		}
 
 		&:not(:first-child) {
@@ -52,11 +70,5 @@
 		}
 	}
 	
-
-	@include breakpoint-up('lg') {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		column-gap: 2rem;
-	}
 }
 
