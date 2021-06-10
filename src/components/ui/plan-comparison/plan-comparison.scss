@@ -14,13 +14,18 @@
         grid-template-rows: repeat(9, 4rem);
 
         .heading {
-            @include font-size('xxsm', $heading-sizes);
+
+            @include breakpoint-down('md') {
+                @include font-size('xxsm', $heading-sizes);
+            }
         }
 
         .features-field p {
 
             //margin-top: 1em;
-            @include font-size('sm', $par-sizes);
+            @include breakpoint-down('md') {
+                @include font-size('sm', $par-sizes);
+            }
         }
 
         .field {

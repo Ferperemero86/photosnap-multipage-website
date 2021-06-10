@@ -12,22 +12,17 @@
 	}
 
 	&-panel {
+			
+		.panel-button {
 
-		&:hover {
+			&:hover {
 
-			@include bg-color('primary');
-			@include color('third');
-			@include transition('background-color', 0.5s);
-			@include transition('color', 0.5s);
-
-			.panel-button {
-
-				@include bg-color('third');
-				@include color('primary');
-				@include transition('background-color', 0.5s);
-				@include transition('color', 0.5s);
+				opacity: 0.5;
+				@include transition('opacity', 0.5s);
 			}
+
 		}
+		
 
 		&:not(:first-child) {
 

@@ -5,36 +5,30 @@ import Panel from "../panel/Panel";
 import SwitchButton from "../switch-button/SwitchButton";
 
 import {
-	setBasicPlan,
-	setProPlan,
-	setBusinessPlan,
+	selectPlanPrice,
 	switchPlanPrices
 } from "../../../state/actions/price-plans-actions";
 
 const Panels = ({ plans, planButton }) => {
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state);
-
+	const currentPlan = state.pricePlansReducer.planSelected.type;
+	// console.log("STATE", state.pricePlansReducer.planSelected.type);
 	const { planSelected } = state.pricePlansReducer;
 
 	return plans.map((plan, idx) => {
-		const planPriceSelected =
-			plan.name === "basic"
-				? setBasicPlan
-				: plan.name === "pro"
-				? setProPlan
-				: setBusinessPlan;
-
 		const planPrice =
 			planSelected.period === "monthly"
 				? plan.price.monthly
 				: plan.price.yearly;
 
-		const setPrice = () => dispatch(planPriceSelected());
+		const selectedClass = plan.name === currentPlan ? "selected" : "";
+		// console.log(plan.name);
+		const setPrice = () => dispatch(selectPlanPrice(plan.name));
 
 		return (
 			<Panel
-				stylesClass="price-panels-panel"
+				stylesClass={`price-panels-panel ${selectedClass}`}
 				heading={plan.heading}
 				bodyText={plan.bodyText}
 				price={planPrice}

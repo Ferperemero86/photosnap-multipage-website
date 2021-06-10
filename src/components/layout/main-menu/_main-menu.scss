@@ -1,11 +1,9 @@
 .main-menu-bar {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	@include padding-y(1.75rem);
-}
-
-.main-menu-bar {
 
 	&-hamburger {
 
@@ -20,12 +18,12 @@
 
 		.menu-link {
 
-			@include color("primary");
-			@include font-weight("md", $font-weights);
+			@include color('primary');
+			@include font-weight('md', $font-weights);
 		}
 
 
-		@include breakpoint-up("md") {
+		@include breakpoint-up('md') {
 			display: block;
 		}
 	}
@@ -33,13 +31,44 @@
 	&-btn {
 		display: none;
 		padding: 0.75rem 1.5rem;
-		@include bg-color("primary");
-		@include color("third");
+		@include bg-color('primary');
+		@include color('third');
 
 
-		@include breakpoint-up("md") {
+		@include breakpoint-up('md') {
 			display: block;
 		}
+	}
+
+	&-mobile-menu {
+
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		padding: 2rem 0;
+		justify-content: center;
+		position: absolute;
+		@include bg-color('third');
+		left: 0;
+		z-index: 9999;
+
+		.menu-link {
+
+			@include color('primary');
+			@include font-weight('md', $font-weights);
+			text-align: center;
+
+			&:not(:last-child) {
+
+				margin-right: 0;
+			}
+
+			&:not(:first-child) {
+
+				margin-top: 1.2rem;
+			}
+		}
+		
 	}
 }
 
