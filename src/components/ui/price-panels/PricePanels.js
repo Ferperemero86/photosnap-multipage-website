@@ -12,11 +12,9 @@ import {
 const Panels = ({ plans, planButton }) => {
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state);
-	console.log(state);
 	const currentPlan = state.planSelected.type;
-
 	const { planSelected } = state;
-	console.log("STATE", state);
+
 	return plans.map((plan, idx) => {
 		const planPrice =
 			planSelected.period === "monthly"
@@ -44,7 +42,6 @@ const Panels = ({ plans, planButton }) => {
 const PricePanels = ({ plans, stylesClass, planButton }) => {
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state);
-	console.log("PRICESSTATE", state);
 	const { planSelected } = state;
 
 	const changePeriod = () => dispatch(switchPlanPrices(planSelected.period));
