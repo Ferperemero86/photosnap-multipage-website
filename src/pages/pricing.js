@@ -8,7 +8,6 @@ import SectionFive from "../components/layout/sections/section-five/SectionFive"
 import { getCardsFromQuery, getElementFromQuery } from "../helpers";
 
 const Pricing = ({ data }) => {
-	console.log("PRICINGDATA", data);
 	const { groupCards, buttons, planPrices } = data.apiJson;
 	const headerFourCard = getCardsFromQuery(groupCards, "headerFour");
 	const planButton = getElementFromQuery(buttons, "plan");

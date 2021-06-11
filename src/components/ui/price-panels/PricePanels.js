@@ -7,15 +7,16 @@ import SwitchButton from "../switch-button/SwitchButton";
 import {
 	selectPlanPrice,
 	switchPlanPrices
-} from "../../../state/actions/price-plans-actions";
+} from "../../../state/actions/planselected-actions";
 
 const Panels = ({ plans, planButton }) => {
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state);
-	const currentPlan = state.pricePlansReducer.planSelected.type;
-	// console.log("STATE", state.pricePlansReducer.planSelected.type);
-	const { planSelected } = state.pricePlansReducer;
+	console.log(state);
+	const currentPlan = state.planSelected.type;
 
+	const { planSelected } = state;
+	console.log("STATE", state);
 	return plans.map((plan, idx) => {
 		const planPrice =
 			planSelected.period === "monthly"
@@ -23,8 +24,8 @@ const Panels = ({ plans, planButton }) => {
 				: plan.price.yearly;
 
 		const selectedClass = plan.name === currentPlan ? "selected" : "";
-		// console.log(plan.name);
-		const setPrice = () => dispatch(selectPlanPrice(plan.name));
+
+		const setPlan = () => dispatch(selectPlanPrice(plan.name));
 
 		return (
 			<Panel
@@ -32,7 +33,7 @@ const Panels = ({ plans, planButton }) => {
 				heading={plan.heading}
 				bodyText={plan.bodyText}
 				price={planPrice}
-				dispatch={setPrice}
+				dispatch={setPlan}
 				button={planButton}
 				key={idx}
 			/>
@@ -43,7 +44,8 @@ const Panels = ({ plans, planButton }) => {
 const PricePanels = ({ plans, stylesClass, planButton }) => {
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state);
-	const { planSelected } = state.pricePlansReducer;
+	console.log("PRICESSTATE", state);
+	const { planSelected } = state;
 
 	const changePeriod = () => dispatch(switchPlanPrices(planSelected.period));
 

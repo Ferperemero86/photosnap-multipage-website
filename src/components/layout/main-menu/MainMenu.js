@@ -31,7 +31,8 @@ const MobileMenu = ({ menu }) => (
 const MainMenu = () => {
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state);
-	const menuDisplay = state.displayReducer.menu.display;
+	console.log(state);
+	const menuDisplay = state.display.menu;
 
 	const data = useStaticQuery(graphql`
 		query MainMenuQuery {

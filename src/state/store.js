@@ -3,8 +3,8 @@ const store = {
 		period: "monthly",
 		type: "basic"
 	},
-	menu: {
-		display: false
+	display: {
+		menu: false
 	}
 };
 

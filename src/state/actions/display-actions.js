@@ -1,4 +1,6 @@
-const SHOW_MOBILE_MENU = "SHOW_MOBILE_MENU";
+import { actions } from ".";
+
+const { SHOW_MOBILE_MENU } = actions;
 
 export const showMobileMenu = (displayState) => {
 	let display;
@@ -11,6 +13,6 @@ export const showMobileMenu = (displayState) => {
 
 	return {
 		type: SHOW_MOBILE_MENU,
-		payload: { menu: { display } }
+		payload: { menu: display }
 	};
 };
